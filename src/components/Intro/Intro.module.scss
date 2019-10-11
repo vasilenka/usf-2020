@@ -1,0 +1,92 @@
+@import 'src/tokens';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.cover {
+  width: 40%;
+  line-height: 1.5;
+  font-weight: 400;
+  @include screen(smallPhone) {
+    margin-top: $space-xl;
+    margin-bottom: $space-ll;
+    min-width: 240px;
+  }
+  @include screen(phone) {
+    margin-top: $space-xl;
+    margin-bottom: $space-ll;
+    min-width: 296px;
+  }
+  @include screen(tablet) {
+    margin-top: $space-xl;
+    margin-bottom: $space-ll;
+    min-width: 360px;
+  }
+  @include screen(tabletLandscape) {
+    margin-top: $space-huge;
+    margin-bottom: $space-ll;
+    min-width: 372px;
+  }
+  @include screen(desktop) {
+    margin-top: $space-huge;
+    margin-bottom: $space-ll;
+    min-width: 480px;
+  }
+  @include screen(desktopWide) {
+    margin-top: $space-huge;
+    margin-bottom: $space-ll;
+    min-width: 480px;
+  }
+}
+
+.header {
+  font-weight: 900;
+  margin-bottom: $space-ml;
+  color: $brand-primary-200;
+}
+
+.body {
+  color: $brand-primary-200;
+  margin-bottom: $space-l;
+}
+
+.socmed {
+  text-decoration: none;
+  display: block;
+  &:not(:last-child) {
+    margin-right: $space-ml;
+  }
+}
+
+.iconWrapper {
+  cursor: pointer;
+  width: fit-content;
+  display: block;
+  padding: 12px;
+  border-radius: 9999px;
+  background-color: $brand-secondary-200;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 4px $brand-secondary-200;
+    transition: all 0.28s;
+
+    .icon {
+      transition: all 0.28s;
+      filter: drop-shadow(0px 4px 4px $dark-alpha-30);
+    }
+  }
+}
+
+.icon {
+  display: block;
+  color: $light-alpha-100;
+  width: 24px;
+  height: 24px;
+  transition: all 0.4s;
+}
