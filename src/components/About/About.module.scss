@@ -1,0 +1,50 @@
+@import 'src/tokens';
+
+.root {
+  background: $brand-primary-100;
+  padding-bottom: 20ch;
+}
+
+.container {
+  padding-top: $space-huge;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: $space-l;
+  color: $dark-alpha-80;
+}
+
+.display {
+  text-align: center;
+  color: $dark-alpha-90;
+  font-family: $font-display;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: $space-stack-l;
+}
+
+.cta {
+  text-align: center;
+  margin: 0 auto 32px;
+  display: flex;
+}
+
+.paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 55ch;
+
+  &:not(:last-child) {
+    margin-bottom: $space-l;
+  }
+}
+
+.logo {
+  width: 64%;
+  margin: $space-stack-ml;
+}

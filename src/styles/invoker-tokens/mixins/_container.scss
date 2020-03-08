@@ -1,7 +1,7 @@
-
 @mixin container() {
   flex-grow: 1;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @include screen(smallPhone) {
     max-width: $page-width + $container-gutter-mobile-small;
@@ -37,7 +37,8 @@
 
 @mixin container-narrow {
   flex-grow: 1;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @include screen(smallPhone) {
     max-width: $page-width + $container-gutter-mobile-small;
@@ -73,7 +74,8 @@
 
 @mixin container-post {
   flex-grow: 1;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @include screen(smallPhone) {
     max-width: $page-width + $container-gutter-mobile-small;

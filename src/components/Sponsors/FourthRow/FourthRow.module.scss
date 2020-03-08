@@ -1,0 +1,72 @@
+@import 'src/tokens';
+
+.root {
+  composes: row from global;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin: $space-inline-ml;
+  }
+}
+
+.logo {
+  max-width: 100%;
+  @include screen(phone) {
+    margin: $space-stack-m;
+  }
+  @include screen(tabPortrait) {
+    margin: $space-stack-m;
+  }
+  @include screen(tabLandscape) {
+    margin: $space-stack-m;
+  }
+}
+
+.pg {
+  max-height: 84px;
+  @include screen(phone) {
+    max-height: 52px;
+  }
+}
+
+.spak {
+  max-height: 100px;
+  @include screen(phone) {
+    max-height: 64px;
+  }
+}
+
+.kapas {
+  max-height: 92px;
+  @include screen(phone) {
+    max-height: 64px;
+  }
+}
+
+.toss {
+  max-height: 92px;
+  @include screen(phone) {
+    max-height: 64px;
+  }
+}
+
+.mavc {
+  max-height: 76px;
+  @include screen(phone) {
+    max-height: 56px;
+  }
+}
+
+.urdc {
+  max-height: 64px;
+  @include screen(phone) {
+    max-height: 44px;
+  }
+}

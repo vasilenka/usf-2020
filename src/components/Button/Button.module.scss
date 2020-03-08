@@ -6,9 +6,9 @@
   border-style: solid;
   letter-spacing: normal;
   text-decoration: none;
-  border-radius: $radius-xs;
+  border-radius: 16px;
   font-family: $font-primary;
-  font-weight: $medium;
+  font-weight: $semibold;
   transition: all 0.36s;
 }
 
@@ -54,13 +54,13 @@
 .large {
   border-width: 1px;
   padding: 15px 31px;
-  font-size: $heading-5;
+  font-size: $heading-3;
   line-height: 24px;
 }
 .largeAlt {
   border-width: 2px;
   padding: 14px 30px;
-  font-size: $heading-5;
+  font-size: $heading-3;
   line-height: 24px;
 }
 
@@ -88,7 +88,7 @@
 .text {
   background-color: transparent;
   border-color: transparent;
-  color: $brand-primary-200;
+  color: $brand-tertiary-200;
   &:active,
   &:focus {
     box-shadow: 0px 0px 0px 2.5px currentColor;
@@ -96,7 +96,7 @@
   }
 }
 .primary {
-  background-color: $brand-primary-200;
+  background-color: $brand-tertiary-200;
   border-color: transparent;
   color: $light-alpha-100;
   &:active,
@@ -107,8 +107,8 @@
 }
 .primaryGhost {
   background-color: transparent;
-  border-color: $brand-primary-200;
-  color: $brand-primary-200;
+  border-color: $brand-tertiary-200;
+  color: $brand-tertiary-200;
   &:active,
   &:focus {
     box-shadow: 0px 0px 0px 2.5px $brand-primary-30;
@@ -118,7 +118,7 @@
 .primaryText {
   background-color: transparent;
   border-color: transparent;
-  color: $brand-primary-200;
+  color: $brand-tertiary-200;
   &:hover {
     background-color: $brand-primary-10;
     transition: all 0.28s;

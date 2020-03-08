@@ -1,0 +1,48 @@
+@import 'src/tokens';
+
+.bleed {
+  background: $brand-primary-100;
+  position: relative;
+}
+
+.artwork {
+  position: absolute;
+  bottom: 60%;
+  right: 0;
+  width: 70vw;
+}
+
+.root {
+  padding-top: $space-huge;
+  padding-bottom: 160px;
+}
+
+.archiveGrid {
+  display: grid;
+  grid-gap: $space-ml;
+
+  @include screen(smallPhone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  @include screen(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  @include screen(tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include screen(tabletLandscape) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include screen(desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include screen(desktopWide) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}

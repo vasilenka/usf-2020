@@ -1,0 +1,92 @@
+@import 'src/tokens';
+
+.bleed {
+  padding-top: $space-xl;
+  // border-top: 1px solid rgba(0,0,0,.08);
+  @include screen(phone) {
+    padding-top: $space-ml;
+    border-top: 1px solid rgba(0,0,0,.08);
+  }
+}
+
+.root {
+  background: rgba(255,255,255,.92);
+  padding: $space-inset-l;
+}
+
+.row {
+  composes: row from global;
+  padding: $space-vertical-l;
+}
+
+.email {
+ composes: col-sm-6 from global;
+
+ @include screen(phone) {
+  margin: $space-stack-ml;
+ }
+}
+
+.socmed {
+  composes: col-sm-6 from global;
+}
+
+.socmed__account {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:not(:last-child) {
+    margin: $space-stack-ml;
+  }
+}
+
+.socmed__icon {
+  font-size: 32px;
+  line-height: 32px;
+  color: $brand-primary-100;
+
+  @include screen(phone) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.iconContainer {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $space-inline-s;
+
+  @include screen(phone) {
+    width: 24px;
+    height: 24px;
+  }
+
+}
+
+.link {
+  display: inline-block;
+  color: $brand-primary-100;
+  transition: all .3s;
+
+  &:hover,
+  &:visited,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+    color: $brand-primary-200;
+    transition: all .3s;
+  }
+
+  @include screen(phone) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.label {
+  margin: $space-stack-ml;
+}

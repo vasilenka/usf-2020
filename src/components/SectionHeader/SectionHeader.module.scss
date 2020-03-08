@@ -1,0 +1,112 @@
+@import 'src/tokens';
+
+.root {
+  margin-bottom: $space-ll;
+  display: flex;
+
+  @include screen(smallPhone) {
+    align-items: flex-start;
+  }
+  @include screen(phone) {
+    align-items: flex-start;
+  }
+  @include screen(tablet) {
+    align-items: center;
+  }
+  @include screen(tabletLandscape) {
+    align-items: center;
+  }
+  @include screen(desktop) {
+    align-items: center;
+  }
+  @include screen(desktopWide) {
+    align-items: center;
+  }
+}
+
+.narrow {
+  @include container-narrow;
+}
+
+.full {
+  @include container;
+}
+
+.bleed {
+  @include container-bleed;
+}
+
+.iconContainer {
+  border-radius: 9999px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $brand-tertiary-100;
+
+  @include screen(smallPhone) {
+    margin-right: $space-m;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  @include screen(phone) {
+    margin-right: $space-m;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  @include screen(tablet) {
+    margin-right: $space-l;
+    width: 56px;
+    height: 56px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @include screen(tabletLandscape) {
+    margin-right: $space-l;
+    width: 56px;
+    height: 56px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @include screen(desktop) {
+    margin-right: $space-l;
+    width: 56px;
+    height: 56px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @include screen(desktopWide) {
+    margin-right: $space-l;
+    width: 56px;
+    height: 56px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.icon {
+  font-size: 48px;
+  line-height: 48px;
+  color: $brand-secondary-100;
+
+  @include screen(phone) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.titleContainer {
+}
+
+.title {
+  color: $dark-hex-80;
+}
+
+.subtitle {
+  color: $dark-hex-80;
+  font-weight: 400;
+}

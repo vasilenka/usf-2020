@@ -1,0 +1,62 @@
+@import 'src/tokens';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  z-index: 99999;
+
+  @include screen(phone) {
+    flex-direction: column;
+  }
+}
+
+.container {
+  background-color: $brand-primary-200;
+  background-image: url('./img/about.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  position: relative;
+  text-align: center;
+  padding-bottom: $space-huge;
+}
+
+.componentContainer {
+  max-width: 712px !important;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: $space-xl;
+  @include screen(phone) {
+    padding-bottom: 0;
+  }
+}
+
+.button_group {
+  flex: 1;
+  @include screen(phone) {
+    &:not(:last-child) {
+      margin: $space-stack-m;
+    }
+  }
+}
+
+.cta {
+  border-radius: 0;
+}
+
+.artwork {
+  width: 88%;
+  margin-top: -15%;
+  margin-right: -80px;
+  margin-bottom: $space-xl;
+  z-index: -1;
+}
+
+.buttonEmphasis {
+  @include screen(phone) {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+  }
+}

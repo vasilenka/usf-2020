@@ -49,9 +49,9 @@ $brand-scarlet-80: rgba(237, 0, 1, 0.8);
 $brand-scarlet-90: rgba(237, 0, 1, 0.9);
 
 // Brand--Primary Colors
-$brand-primary-100: $brand-sea-100;
-$brand-primary-200: #554768;
-$brand-primary-300: $brand-sea-300;
+$brand-primary-100: #ffe609;
+$brand-primary-200: #ffe609;
+$brand-primary-300: #ffe609;
 
 $brand-primary-10: $brand-sea-10;
 $brand-primary-20: $brand-sea-20;
@@ -64,9 +64,9 @@ $brand-primary-80: $brand-sea-80;
 $brand-primary-90: $brand-sea-90;
 
 // Brand--Secondary colors
-$brand-secondary-100: $brand-scarlet-100;
-$brand-secondary-200: #feda3f;
-$brand-secondary-300: $brand-scarlet-300;
+$brand-secondary-100: #5a5eaa;
+$brand-secondary-200: #5a5eaa;
+$brand-secondary-300: #5a5eaa;
 
 $brand-secondary-10: $brand-scarlet-10;
 $brand-secondary-20: $brand-scarlet-20;
@@ -78,10 +78,15 @@ $brand-secondary-70: $brand-scarlet-70;
 $brand-secondary-80: $brand-scarlet-80;
 $brand-secondary-90: $brand-scarlet-90;
 
+// Brand--Secondary colors
+$brand-tertiary-100: #db1f5d;
+$brand-tertiary-200: #db1f5d;
+$brand-tertiary-300: #db1f5d;
+
 // Dark
 // HEX
 $dark-hex-90: #0f0f0f; // Heading
-$dark-hex-80: #292929; // Heading and Body text in text-heavy page such as blog post
+$dark-hex-80: #231c43; // Heading and Body text in text-heavy page such as blog post
 $dark-hex-70: #484848; // Body text
 $dark-hex-60: #767676; // Caption and subtitle
 $dark-hex-50: #8f8f8f;

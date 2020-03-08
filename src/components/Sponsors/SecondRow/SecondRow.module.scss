@@ -1,0 +1,48 @@
+@import 'src/tokens';
+
+.root {
+  composes: row from global;
+  align-items: center;
+  justify-content: center;
+  margin: $space-stack-ml;
+}
+
+.logoContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+
+    margin: $space-inline-l;
+
+  }
+}
+
+.logo {
+  max-width: 100%;
+  @include screen(phone) {
+    margin: $space-stack-m;
+  }
+}
+
+.lokananta {
+  max-height: 92px;
+  @include screen(phone) {
+    max-height: 68px;
+  }
+}
+
+.muara {
+  max-height: 104px;
+  @include screen(phone) {
+    max-height: 72px;
+  }
+}
+
+.banjarsari {
+  max-height: 144px;
+  @include screen(phone) {
+    max-height: 88px;
+  }
+}

@@ -1,14 +1,182 @@
 @import 'src/tokens';
 
-.container {
-
+.root {
+  position: sticky;
+  top: 0;
+  background: $brand-secondary-200;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+  z-index: 999999;
 }
 
-.root {
-  padding: $space-vertical-sm;
-  background: $light-alpha-100;
+.container {
+  justify-content: space-between;
+  color: $brand-primary-100;
+  @include screen(smallPhone) {
+    display: none;
+  }
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tablet) {
+    display: flex;
+  }
+  @include screen(tabletLandscape) {
+    display: flex;
+  }
+  @include screen(desktop) {
+    display: flex;
+  }
+  @include screen(desktopWide) {
+    display: flex;
+  }
+}
+
+.smallerContainer {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: $space-m $space-ml;
+  justify-content: space-between;
+  background: $brand-secondary-200;
+
+  @include screen(phone) {
+    display: flex;
+  }
+  @include screen(tabPortrait) {
+    display: none;
+  }
+  @include screen(tabLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
+  }
+}
+
+.menu {
+  cursor: pointer;
+  color: $light-alpha-100;
+  transition: all 0.5s;
+  width: fit-content;
+  text-decoration: none;
+
+  @include screen(smallPhone) {
+    margin-bottom: $space-m;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(phone) {
+    margin-bottom: $space-m;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-top: $space-sm;
+    padding-bottom: $space-sm;
+  }
+  @include screen(tablet) {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+    &:not(:last-child) {
+      margin-right: $space-ll;
+    }
+  }
+  @include screen(tabletLandscape) {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+    &:not(:last-child) {
+      margin-right: $space-ll;
+    }
+  }
+  @include screen(desktop) {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+    &:not(:last-child) {
+      margin-right: $space-ll;
+    }
+  }
+  @include screen(desktopWide) {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-top: $space-m;
+    padding-bottom: $space-m;
+    &:not(:last-child) {
+      margin-right: $space-ll;
+    }
+  }
+
+  &:hover {
+    color: $brand-secondary-200;
+    transition: all 0.3s;
+  }
+}
+
+.menuSmaller {
+  composes: container-narrow from global;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
+}
+
+.menuContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9999999;
+  box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.2);
+  padding: $space-inset-ml;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  width: 100%;
+  margin: $space-stack-ml;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.logo {
+  width: 128px;
+  margin: $space-stack-l;
+  display: block;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.closeButton {
+  width: 32px;
+  height: 32px;
+}
+
+.smallMenuText {
+  color: $brand-primary-100 !important;
+  font-weight: $bold;
 }

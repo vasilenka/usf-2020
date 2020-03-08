@@ -1,0 +1,138 @@
+@import 'src/tokens';
+
+.card {
+  background: $light-alpha-100;
+  display: flex;
+  width: 100%;
+
+  @include screen(smallPhone) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @include screen(phone) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @include screen(tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+  @include screen(tabletLandscape) {
+    flex-direction: row;
+    align-items: center;
+  }
+  @include screen(desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.cover {
+  @include screen(smallPhone) {
+    width: 100%;
+    margin-bottom: $space-l;
+  }
+  @include screen(phone) {
+    width: 100%;
+    margin-bottom: $space-l;
+  }
+  @include screen(tablet) {
+    width: 50vw;
+    margin-bottom: 0;
+  }
+  @include screen(tabletLandscape) {
+    width: 50vw;
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.text {
+  @include screen(smallPhone) {
+    padding: $space-ml 0;
+    flex: 1;
+  }
+  @include screen(phone) {
+    padding: $space-ml 0;
+    flex: 1;
+  }
+  @include screen(tablet) {
+    padding: $space-ll;
+    flex: 1.5;
+  }
+  @include screen(tabletLandscape) {
+    padding: $space-ll;
+    flex: 1.5;
+  }
+  @include screen(desktop) {
+    padding: $space-ll;
+    flex: 1.5;
+  }
+  @include screen(desktopWide) {
+    padding: $space-ll;
+    flex: 1.5;
+  }
+}
+
+.subtitle {
+  margin-bottom: $space-l;
+  color: $dark-hex-80;
+  font-weight: $bold;
+}
+
+.description {
+  @include screen(smallPhone) {
+    margin: $space-stack-ml;
+  }
+  @include screen(phone) {
+    margin: $space-stack-ml;
+  }
+  @include screen(tablet) {
+    margin: $space-stack-m;
+  }
+  @include screen(tabletLandscape) {
+    margin: $space-stack-m;
+  }
+  @include screen(desktop) {
+    margin: $space-stack-m;
+  }
+  @include screen(desktopWide) {
+    margin: $space-stack-m;
+  }
+}
+
+.logo {
+}
+
+.cta {
+  justify-content: center;
+  @include screen(smallPhone) {
+    width: 100%;
+  }
+  @include screen(phone) {
+    width: 100%;
+  }
+  @include screen(tablet) {
+    width: fit-content;
+  }
+  @include screen(tabletLandscape) {
+    width: fit-content;
+  }
+  @include screen(desktop) {
+    width: fit-content;
+  }
+  @include screen(desktopWide) {
+    width: fit-content;
+  }
+}

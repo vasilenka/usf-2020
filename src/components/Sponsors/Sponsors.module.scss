@@ -1,0 +1,12 @@
+@import 'src/tokens';
+
+.root {
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
+}
+
+.row {
+  @include grid-row();
+  padding-top: $space-l;
+  padding-bottom: $space-l;
+}

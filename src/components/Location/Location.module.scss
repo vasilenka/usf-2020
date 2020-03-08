@@ -1,0 +1,193 @@
+@import 'src/tokens';
+
+.root {
+  flex-direction: column;
+  padding-top: $space-huge;
+  padding-bottom: 500px;
+  background: $brand-primary-100;
+  position: relative;
+}
+
+.betawiWrapper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -33%);
+  width: 100%;
+  max-width: 70ch;
+  user-select: none;
+}
+
+.container {
+  @include container;
+  position: relative;
+
+  @include screen(smallPhone) {
+    height: 360px;
+  }
+  @include screen(phone) {
+    height: 360px;
+  }
+  @include screen(tablet) {
+    height: 560px;
+  }
+  @include screen(tabletLandscape) {
+    height: 560px;
+  }
+  @include screen(desktop) {
+    height: 560px;
+  }
+  @include screen(desktopWide) {
+    height: 560px;
+  }
+}
+
+.addressPhone {
+  @include screen(smallPhone) {
+    width: 100%;
+    display: static;
+  }
+  @include screen(phone) {
+    width: 100%;
+    display: static;
+  }
+  @include screen(tablet) {
+    display: none;
+  }
+  @include screen(tabletLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
+  }
+}
+
+.addressContainer {
+  @include container;
+  z-index: 999;
+
+  @include screen(smallPhone) {
+    display: none;
+  }
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tablet) {
+    position: sticky;
+    top: 72px;
+    display: flex;
+    justify-content: flex-end;
+    padding: $space-vertical-l;
+  }
+  @include screen(tabletLandscape) {
+    position: sticky;
+    top: 72px;
+    display: flex;
+    justify-content: flex-end;
+    padding: $space-vertical-l;
+  }
+  @include screen(desktop) {
+    position: sticky;
+    top: 72px;
+    display: flex;
+    justify-content: flex-end;
+    padding: $space-vertical-l;
+  }
+  @include screen(desktopWide) {
+    position: sticky;
+    top: 72px;
+    display: flex;
+    justify-content: flex-end;
+    padding: $space-vertical-l;
+  }
+}
+
+.card {
+  background: $brand-secondary-100;
+
+  @include screen(smallPhone) {
+    max-width: 100%;
+    border-radius: 0px;
+    padding: $space-l $space-ml;
+    border-radius: 0px;
+  }
+  @include screen(phone) {
+    max-width: 100%;
+    border-radius: 0px;
+    padding: $space-l $space-ml;
+    border-radius: 0px;
+  }
+  @include screen(tablet) {
+    border-radius: 16px;
+    padding: $space-l;
+    justify-self: flex-end;
+    max-width: 320px;
+  }
+  @include screen(tabletLandscape) {
+    border-radius: 16px;
+    padding: $space-l;
+    justify-self: flex-end;
+    max-width: 320px;
+  }
+  @include screen(desktop) {
+    border-radius: 16px;
+    padding: $space-l;
+    justify-self: flex-end;
+    max-width: 320px;
+  }
+  @include screen(desktopWide) {
+    border-radius: 16px;
+    padding: $space-l;
+    justify-self: flex-end;
+    max-width: 320px;
+  }
+}
+
+.title {
+  color: $brand-primary-100;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+
+  @include screen(smallPhone) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(phone) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(tablet) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(desktop) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: $space-ml;
+  }
+}
+
+.mapContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $light-alpha-70;
+  border-radius: 8px;
+
+  @include screen(phone) {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.special {
+  @include screen(phone) {
+    composes: contianer-bleed from global;
+  }
+}

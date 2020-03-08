@@ -1,0 +1,29 @@
+@import 'src/tokens';
+
+.root {
+  composes: row from global;
+  align-items: center;
+  justify-content: center;
+  margin: $space-stack-ml;
+}
+
+.logoContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+
+    margin: $space-inline-l;
+
+  }
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 48px;
+  @include screen(phone) {
+    margin: $space-stack-m;
+    max-height: 36px;
+  }
+}

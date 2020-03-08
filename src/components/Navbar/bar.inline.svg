@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>bar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-2" x="0" y="0" width="32" height="32"></rect>
+        <g id="Mobile" transform="translate(-91.000000, -393.000000)" fill="#000000">
+            <g id="line" transform="translate(95.000000, 405.000000)">
+                <rect x="0" y="0" width="24" height="2"></rect>
+                <rect x="0" y="6" width="24" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

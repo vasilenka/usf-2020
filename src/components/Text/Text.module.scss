@@ -50,25 +50,25 @@
   font-size: $heading-5;
   line-height: 22px;
   letter-spacing: -0.24px;
-  font-weight: $medium;
+  font-weight: $semibold;
 }
 .heading6 {
   font-size: $heading-6;
   line-height: 18px;
   letter-spacing: -0.24px;
-  font-weight: $medium;
+  font-weight: $semibold;
 }
 
 // Body Text
 .large {
   font-size: $body-3;
   line-height: 26px;
-  font-weight: $regular;
+  font-weight: $medium;
 }
 .medium {
   font-size: $body-2;
-  line-height: 22px;
-  font-weight: $regular;
+  line-height: 1.5;
+  font-weight: $medium;
 }
 .small {
   font-size: $body-1;

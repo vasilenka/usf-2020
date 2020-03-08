@@ -1,0 +1,61 @@
+@import 'src/tokens';
+
+.root {
+  composes: row from global;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoContainer {
+  // composes: col-sm-6 col-md-3 from global;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+
+    margin: $space-inline-l;
+
+  }
+}
+
+.logo {
+  max-width: 100%;
+  @include screen(phone) {
+    margin: $space-stack-m;
+  }
+  @include screen(tabPortrait) {
+    margin: $space-stack-m;
+  }
+  @include screen(tabLandscape) {
+    margin: $space-stack-m;
+  }
+}
+
+.habitat {
+  max-height: 80px;
+  @include screen(phone) {
+    max-height: 52px;
+  }
+}
+
+.itdp {
+  max-height: 64px;
+  @include screen(phone) {
+    max-height: 40px;
+  }
+}
+
+.kopernik {
+  max-height: 40px;
+  @include screen(phone) {
+    max-height: 24px;
+  }
+}
+
+.bareng {
+  max-height: 52px;
+  @include screen(phone) {
+    max-height: 36px;
+  }
+}
