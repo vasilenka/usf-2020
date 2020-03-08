@@ -1,35 +1,33 @@
 import styles from './SecondRow.module.scss'
 import React from 'react'
-import classnames from 'classnames'
+import cx from 'classnames'
 
 import lokananta from './lokananta.png'
 import muara from './muara.png'
 import banjarsari from './rumahbanjarsari.png'
 
+export const LogoContainer = ({ src, alt, name }) => {
+  return (
+    <div className={styles.logoContainer}>
+      <img src={src} className={cx(styles.logo, styles[name])} alt={alt} />
+    </div>
+  )
+}
+
 const SecondRow = ({ className, ...restProps }) => {
   return (
     <div className={styles.root}>
-      <div className={styles.logoContainer}>
-        <img
-          src={lokananta}
-          className={classnames(styles.logo, styles.lokananta)}
-          alt="Lokananta records logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={muara}
-          className={classnames(styles.logo, styles.muara)}
-          alt="Muara market logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={banjarsari}
-          className={classnames(styles.logo, styles.banjarsari)}
-          alt="Rumah banjarsari logo"
-        />
-      </div>
+      <LogoContainer
+        src={lokananta}
+        alt="Lokananta records logo"
+        name="lokananta"
+      />
+      <LogoContainer src={muara} alt="Muara market logo" name="muara" />
+      <LogoContainer
+        src={banjarsari}
+        alt="Rumah banjarsari logo"
+        name="banjarsari"
+      />
     </div>
   )
 }

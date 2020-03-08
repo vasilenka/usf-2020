@@ -1,6 +1,6 @@
 import styles from './FourthRow.module.scss'
 import React from 'react'
-import classnames from 'classnames'
+import cx from 'classnames'
 
 import pg from './peace-generation.jpg'
 import spak from './spak.png'
@@ -9,51 +9,23 @@ import toss from './toss-lk.png'
 import mavc from './mavc.jpg'
 import urdc from './urdc.png'
 
+export const LogoContainer = ({ src, alt, name }) => {
+  return (
+    <div className={styles.logoContainer}>
+      <img src={src} className={cx(styles.logo, styles[name])} alt={alt} />
+    </div>
+  )
+}
+
 const FourthRow = ({ className, ...restProps }) => {
   return (
     <div className={styles.root}>
-      <div className={styles.logoContainer}>
-        <img
-          src={pg}
-          className={classnames(styles.logo, styles.pg)}
-          alt="Habitat for humanity logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={spak}
-          className={classnames(styles.logo, styles.spak)}
-          alt="ITDP logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={kapas}
-          className={classnames(styles.logo, styles.kapas)}
-          alt="Kopernik logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={toss}
-          className={classnames(styles.logo, styles.toss)}
-          alt="Salam toss logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={mavc}
-          className={classnames(styles.logo, styles.mavc)}
-          alt="MAVC logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={urdc}
-          className={classnames(styles.logo, styles.urdc)}
-          alt="URDC logo"
-        />
-      </div>
+      <LogoContainer src={pg} name="pg" alt="Habitat for humanity logo" />
+      <LogoContainer src={spak} name="spak" alt="ITDP logo" />
+      <LogoContainer src={kapas} name="kapas" alt="Kopernik logo" />
+      <LogoContainer src={toss} name="toss" alt="Salam toss logo" />
+      <LogoContainer src={mavc} name="mavc" alt="MAVC logo" />
+      <LogoContainer src={urdc} name="urdc" alt="URDC logo" />
     </div>
   )
 }

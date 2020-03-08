@@ -1,20 +1,73 @@
 @import 'src/tokens';
 
-.bleed {
+.root {
   background: $brand-primary-100;
   position: relative;
 }
 
-.artwork {
-  position: absolute;
-  bottom: 60%;
-  right: 0;
-  width: 70vw;
+.container {
+  @include screen(smallPhone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-huge;
+  }
+  @include screen(phone) {
+    padding-top: $space-ll;
+    padding-bottom: $space-huge;
+  }
+  @include screen(tablet) {
+    padding-top: $space-huge;
+    padding-bottom: $space-xl;
+  }
+  @include screen(tabletLandscape) {
+    padding-top: $space-huge;
+    padding-bottom: $space-xl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-huge;
+    padding-bottom: 160px;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-huge;
+    padding-bottom: 160px;
+  }
 }
 
-.root {
-  padding-top: $space-huge;
-  padding-bottom: 160px;
+.artwork {
+  position: absolute;
+  @include screen(smallPhone) {
+    bottom: 100%;
+    right: 0;
+    width: 150vw;
+    transform: translateX(35%);
+  }
+  @include screen(phone) {
+    bottom: 100%;
+    right: 0;
+    width: 150vw;
+    transform: translateX(35%);
+  }
+  @include screen(tablet) {
+    bottom: 88%;
+    right: 0;
+    width: 100vw;
+    transform: translateX(35%);
+  }
+  @include screen(tabletLandscape) {
+    bottom: 88%;
+    right: 0;
+    width: 100vw;
+    transform: translateX(35%);
+  }
+  @include screen(desktop) {
+    bottom: 60%;
+    right: 0;
+    width: 70vw;
+  }
+  @include screen(desktopWide) {
+    bottom: 60%;
+    right: 0;
+    width: 80vw;
+  }
 }
 
 .archiveGrid {

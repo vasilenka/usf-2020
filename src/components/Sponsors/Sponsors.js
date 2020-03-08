@@ -19,10 +19,11 @@ import MediaPartners from './MediaPartners/MediaPartners'
 
 const Sponsors = ({ className }) => {
   return (
-    <Container bleed id="Partners" className={styles.bleed}>
-      <Container narrow className={styles.root}>
+    <Container id="Partners" className={styles.root}>
+      <Container narrow className={styles.card}>
         <SectionHeader
           bleed
+          center
           icon={<FaStar />}
           title="Organizer &amp; Partners"
         />
@@ -33,12 +34,12 @@ const Sponsors = ({ className }) => {
         <FifthRow />
         <div className={styles.row}>
           <Text
+            heading4
             style={{
               textAlign: 'center',
               width: '100%',
-            }}
-            large>
-            Media partners
+            }}>
+            Media Partners
           </Text>
         </div>
         <MediaPartners />

@@ -1,27 +1,42 @@
 @import 'src/tokens';
 
 .root {
-  margin-bottom: $space-ll;
   display: flex;
 
   @include screen(smallPhone) {
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: $space-ml;
   }
   @include screen(phone) {
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: $space-ml;
   }
   @include screen(tablet) {
     align-items: center;
+    flex-direction: column;
+    margin-bottom: $space-ml;
   }
   @include screen(tabletLandscape) {
     align-items: center;
+    flex-direction: column;
+    margin-bottom: $space-ml;
   }
   @include screen(desktop) {
     align-items: center;
+    flex-direction: row;
+    margin-bottom: $space-ll;
   }
   @include screen(desktopWide) {
     align-items: center;
+    flex-direction: row;
+    margin-bottom: $space-ll;
   }
+}
+
+.center {
+  justify-content: center;
 }
 
 .narrow {
@@ -45,32 +60,36 @@
   color: $brand-tertiary-100;
 
   @include screen(smallPhone) {
-    margin-right: $space-m;
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
-    line-height: 32px;
+    margin-right: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: $space-sm;
   }
   @include screen(phone) {
-    margin-right: $space-m;
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
-    line-height: 32px;
+    margin-right: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: $space-sm;
   }
   @include screen(tablet) {
-    margin-right: $space-l;
-    width: 56px;
-    height: 56px;
-    font-size: 48px;
-    line-height: 48px;
+    margin-right: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: $space-sm;
   }
   @include screen(tabletLandscape) {
-    margin-right: $space-l;
-    width: 56px;
-    height: 56px;
-    font-size: 48px;
-    line-height: 48px;
+    margin-right: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: $space-sm;
   }
   @include screen(desktop) {
     margin-right: $space-l;
@@ -78,6 +97,7 @@
     height: 56px;
     font-size: 48px;
     line-height: 48px;
+    margin-bottom: 0;
   }
   @include screen(desktopWide) {
     margin-right: $space-l;
@@ -85,17 +105,7 @@
     height: 56px;
     font-size: 48px;
     line-height: 48px;
-  }
-}
-
-.icon {
-  font-size: 48px;
-  line-height: 48px;
-  color: $brand-secondary-100;
-
-  @include screen(phone) {
-    font-size: 32px;
-    line-height: 32px;
+    margin-bottom: 0;
   }
 }
 

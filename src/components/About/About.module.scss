@@ -2,11 +2,45 @@
 
 .root {
   background: $brand-primary-100;
-  padding-bottom: 20ch;
+  @include screen(smallPhone) {
+    padding-bottom: 25ch;
+  }
+  @include screen(phone) {
+    padding-bottom: 25ch;
+  }
+  @include screen(tablet) {
+    padding-bottom: 45ch;
+  }
+  @include screen(tabletLandscape) {
+    padding-bottom: 45ch;
+  }
+  @include screen(desktop) {
+    padding-bottom: 20ch;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: 20ch;
+  }
 }
 
 .container {
-  padding-top: $space-huge;
+  @include screen(smallPhone) {
+    padding-top: $space-ll;
+  }
+  @include screen(phone) {
+    padding-top: $space-ll;
+  }
+  @include screen(tablet) {
+    padding-top: $space-xl;
+  }
+  @include screen(tabletLandscape) {
+    padding-top: $space-xl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-huge;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-huge;
+  }
 }
 
 .title {

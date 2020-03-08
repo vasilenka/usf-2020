@@ -20,25 +20,25 @@ const Map = compose(
 )(({ isMarkerShown, className, ...restProps }) => {
   const marks = [
     {
-      label: 'Museum Nasional Indonesia',
+      label: `Museum Nasional Indonesia`,
       address: 'Jl. Medan Merdeka Barat No.12, Gambir, Kota Jakarta Pusat',
       position: {
-        lat: -6.1772059,
-        lng: 106.8254622,
+        lat: -6.1761059,
+        lng: 106.8214622,
       },
     },
   ]
 
-  const screenSize =
-    document.body.clientWidth > 600
-      ? { lat: -6.1772059, lng: 106.8254622 }
-      : { lat: -6.1772059, lng: 106.8254622 }
-  const zoom = document.body.clientWidth > 600 ? 14 : 12
+  // const screenSize =
+  //   document.body.clientWidth > 600
+  //     ? { lat: -6.1761059, lng: 106.8214622 }
+  //     : { lat: -6.1761059, lng: 106.8214622 }
+  // const zoom = document.body.clientWidth > 600 ? 14 : 12
 
   return (
     <GoogleMap
-      defaultZoom={zoom}
-      defaultCenter={screenSize}
+      defaultZoom={14}
+      defaultCenter={{ lat: -6.1761059, lng: 106.8214622 }}
       gestureHandling="greedy"
       options={{
         zoomControl: true,
@@ -61,10 +61,13 @@ const Map = compose(
                 borderRadius: 12,
                 color: '#ffe609',
                 fontSize: '16px',
-                padding: '8px 12px',
+                padding: '12px 16px',
+                textAlign: 'center',
                 fontWeight: 500,
               }}>
-              {mark.label}
+              Museum <br />
+              Nasional <br />
+              Indonesia
             </div>
           </MarkerWithLabel>
         )

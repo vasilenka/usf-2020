@@ -27,7 +27,7 @@ const Location = ({ className, ...restProps }) => {
         />
       </Container>
 
-      <div className={styles.container}>
+      <Container className={styles.container}>
         <div className={styles.addressContainer}>
           <div className={styles.card}>
             <Text className={styles.title} heading5 as="h3">
@@ -42,7 +42,7 @@ const Location = ({ className, ...restProps }) => {
         </div>
 
         <Map isMarkerShown />
-      </div>
+      </Container>
       <div className={styles.addressPhone}>
         <div className={styles.card}>
           <Text className={styles.title} heading4 as="h3">

@@ -6,6 +6,14 @@ import kabar from './media/kabar-solo.jpg'
 import event from './media/event-solo.jpg'
 import agenda from './media/agenda-solo.jpg'
 
+export const LogoContainer = ({ src, alt, name }) => {
+  return (
+    <div className={styles.logoContainer}>
+      <img src={src} className={cx(styles.logo, styles[name])} alt={alt} />
+    </div>
+  )
+}
+
 const MediaPartners = ({ className, ...restProps }) => {
   return (
     <div className={styles.root}>

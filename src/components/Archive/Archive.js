@@ -16,11 +16,11 @@ import Transportation from './../images/transportation'
 
 const Archive = ({ className, ...restProps }) => {
   return (
-    <div id="Archive" className={styles.bleed}>
+    <div id="Archive" className={styles.root}>
       <div className={styles.artwork}>
         <Transportation />
       </div>
-      <Container as="section" className={styles.root}>
+      <Container as="section" className={styles.container}>
         <SectionHeader bleed icon={<FaArchive />} title="Archive" />
         <div className={styles.archiveGrid}>
           <ArchiveItem

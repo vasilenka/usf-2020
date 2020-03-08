@@ -1,7 +1,8 @@
 @import 'src/tokens';
 
 .root {
-  composes: row from global;
+  @include grid-row();
+  width: 100%;
   align-items: center;
   justify-content: center;
   margin: $space-stack-ml;
@@ -13,22 +14,49 @@
   align-items: center;
 
   &:not(:last-child) {
-
     margin: $space-inline-l;
-
   }
 }
 
 .logo {
   max-width: 100%;
+  @include screen(smallPhone) {
+    margin-bottom: $space-m;
+  }
   @include screen(phone) {
-    margin: $space-stack-m;
+    margin-bottom: $space-m;
+  }
+  @include screen(tablet) {
+    margin-bottom: 0;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
   }
 }
 
 .kotakita {
-  max-height: 112px;
+  @include screen(smallPhone) {
+    max-height: 64px;
+  }
   @include screen(phone) {
     max-height: 64px;
+  }
+  @include screen(tablet) {
+    max-height: 112px;
+  }
+  @include screen(tabletLandscape) {
+    max-height: 112px;
+  }
+  @include screen(desktop) {
+    max-height: 112px;
+  }
+  @include screen(desktopWide) {
+    max-height: 112px;
   }
 }

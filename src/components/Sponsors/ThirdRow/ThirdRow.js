@@ -1,43 +1,31 @@
 import styles from './ThirdRow.module.scss'
 import React from 'react'
-import classnames from 'classnames'
+import cx from 'classnames'
 
 import habitat from './habitat.jpg'
 import itdp from './itdp.jpg'
 import kopernik from './kopernik.png'
 import bareng from './ngebikin-bareng.png'
 
+export const LogoContainer = ({ src, alt, name }) => {
+  return (
+    <div className={styles.logoContainer}>
+      <img src={src} className={cx(styles.logo, styles[name])} alt={alt} />
+    </div>
+  )
+}
+
 const ThirdRow = ({ className, ...restProps }) => {
   return (
     <div className={styles.root}>
-      <div className={styles.logoContainer}>
-        <img
-          src={habitat}
-          className={classnames(styles.logo, styles.habitat)}
-          alt="Habitat for humanity logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={itdp}
-          className={classnames(styles.logo, styles.itdp)}
-          alt="ITDP logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={kopernik}
-          className={classnames(styles.logo, styles.kopernik)}
-          alt="Kopernik logo"
-        />
-      </div>
-      <div className={styles.logoContainer}>
-        <img
-          src={bareng}
-          className={classnames(styles.logo, styles.bareng)}
-          alt="Ngebikin Bareng logo"
-        />
-      </div>
+      <LogoContainer
+        src={habitat}
+        name="habitat"
+        alt="Habitat for humanity logo"
+      />
+      <LogoContainer src={itdp} name="itdp" alt="ITDP logo" />
+      <LogoContainer src={kopernik} name="kopernik" alt="Kopernik logo" />
+      <LogoContainer src={bareng} name="bareng" alt="Ngebikin Bareng logo" />
     </div>
   )
 }

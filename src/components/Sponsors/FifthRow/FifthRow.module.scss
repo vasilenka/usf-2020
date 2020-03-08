@@ -1,7 +1,7 @@
 @import 'src/tokens';
 
 .root {
-  composes: row from global;
+  @include grid-row();
   align-items: center;
   justify-content: center;
 }
@@ -12,42 +12,91 @@
   align-items: center;
 
   &:not(:last-child) {
-
-    margin: $space-inline-l;
-
+    margin-right: $space-l;
   }
 }
 
 .logo {
   max-width: 100%;
+  @include screen(smallPhone) {
+    margin-bottom: $space-m;
+  }
   @include screen(phone) {
-    margin: $space-stack-m;
+    margin-bottom: $space-m;
   }
-  @include screen(tabPortrait) {
-    margin: $space-stack-m;
+  @include screen(tablet) {
+    margin-bottom: $space-m;
   }
-  @include screen(tabLandscape) {
-    margin: $space-stack-m;
+  @include screen(tabletLandscape) {
+    margin-bottom: $space-m;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
   }
 }
 
 .gula {
-  max-height: 80px;
+  @include screen(smallPhone) {
+    max-height: 52px;
+  }
   @include screen(phone) {
     max-height: 52px;
+  }
+  @include screen(tablet) {
+    max-height: 80px;
+  }
+  @include screen(tabletLandscape) {
+    max-height: 80px;
+  }
+  @include screen(desktop) {
+    max-height: 80px;
+  }
+  @include screen(desktopWide) {
+    max-height: 80px;
   }
 }
 
 .kampung {
-  max-height: 64px;
+  @include screen(smallPhone) {
+    max-height: 40px;
+  }
   @include screen(phone) {
     max-height: 40px;
+  }
+  @include screen(tablet) {
+    max-height: 64px;
+  }
+  @include screen(tabletLandscape) {
+    max-height: 64px;
+  }
+  @include screen(desktop) {
+    max-height: 64px;
+  }
+  @include screen(desktopWide) {
+    max-height: 64px;
   }
 }
 
 .ruangatas {
-  max-width: 104px;
+  @include screen(smallPhone) {
+    max-height: 60px;
+  }
   @include screen(phone) {
     max-height: 60px;
+  }
+  @include screen(tablet) {
+    max-width: 104px;
+  }
+  @include screen(tabletLandscape) {
+    max-width: 104px;
+  }
+  @include screen(desktop) {
+    max-width: 104px;
+  }
+  @include screen(desktopWide) {
+    max-width: 104px;
   }
 }

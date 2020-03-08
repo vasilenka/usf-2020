@@ -3,83 +3,67 @@ import React from 'react'
 import classnames from 'classnames'
 
 import { FaPhone } from 'react-icons/fa'
+import { Facebook, Instagram, Twitter } from './../SocialIcons/SocialIcons'
 
 import Text from '../Text/Text'
-import Section from '../Section/Section'
 import SectionHeader from '../SectionHeader/SectionHeader'
+
+import Container from './../../layouts/Container/Container'
+
+const Icon = ({ icon, ...restProps }) => {
+  return <div className={styles.iconWrapper}>{icon}</div>
+}
 
 const Contact = ({ className }) => {
   return (
-    <Section id="Contact" className={styles.bleed}>
-      <Section narrow className={styles.root}>
-        <SectionHeader bleed icon={<FaPhone />} title="Contact us" />
+    <Container bleed id="Contact" className={styles.root}>
+      <Container narrow className={styles.card}>
+        <SectionHeader
+          icon={<FaPhone />}
+          className={styles.header}
+          bleed
+          title="Contact us"
+        />
         <div className={styles.row}>
           <div className={styles.email}>
-            <Text className={styles.label} component="h3" label highlight>
-              Email us at
+            <Text className={styles.label} heading5>
+              For more information, please email us at:
             </Text>
             <a
-              className={classnames(styles.link, styles.email__address)}
+              className={classnames(styles.link)}
               href="mailto:usf.indonesia@gmail.com"
               target="_blank"
               rel="noreferrer noopener">
-              <Text large>usf.indonesia@gmail.com</Text>
+              usf.indonesia@gmail.com
             </a>
           </div>
 
-          <div className={styles.socmed}>
-            <Text className={styles.label} component="h3" label highlight>
-              Connect with us on social media
-            </Text>
+          <div className={styles.socmedWrapper}>
             <a
-              className={styles.socmed__account}
-              href="http://facebook.com/urban.social.forum"
+              className={styles.socmed}
+              href="https://twitter.com/Urban_Forum"
               target="_blank"
-              rel="noopener noreferrer">
-              <span className={styles.iconContainer}>
-                <i
-                  className={classnames(styles.socmed__icon, 'fab fa-facebook')}
-                />
-              </span>
-              <Text large className={styles.link}>
-                Urban Social Forum
-              </Text>
+              rel="noreferrer noopener">
+              <Icon icon={<Twitter className={styles.icon} />} />
             </a>
             <a
-              className={styles.socmed__account}
-              href="http://twitter.com/urban_forum"
+              className={styles.socmed}
+              href="https://www.facebook.com/UrbanSocialForum/"
               target="_blank"
-              rel="noopener noreferrer">
-              <span className={styles.iconContainer}>
-                <i
-                  className={classnames(styles.socmed__icon, 'fab fa-twitter')}
-                />
-              </span>
-              <Text large className={styles.link}>
-                @Urban_Forum
-              </Text>
+              rel="noreferrer noopener">
+              <Icon icon={<Facebook className={styles.icon} />} />
             </a>
             <a
-              className={styles.socmed__account}
-              href="http://instagram.com/urbansocialforum"
+              className={styles.socmed}
+              href="https://www.instagram.com/urbansocialforum/"
               target="_blank"
-              rel="noopener noreferrer">
-              <span className={styles.iconContainer}>
-                <i
-                  className={classnames(
-                    styles.socmed__icon,
-                    'fab fa-instagram'
-                  )}
-                />
-              </span>
-              <Text large className={styles.link}>
-                @urbansocialforum
-              </Text>
+              rel="noreferrer noopener">
+              <Icon icon={<Instagram className={styles.icon} />} />
             </a>
           </div>
         </div>
-      </Section>
-    </Section>
+      </Container>
+    </Container>
   )
 }
 

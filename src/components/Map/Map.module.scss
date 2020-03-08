@@ -15,16 +15,16 @@
     border-radius: 0;
   }
   @include screen(tablet) {
-    border-radius: 8px;
+    border-radius: 0;
   }
   @include screen(tabletLandscape) {
-    border-radius: 8px;
+    border-radius: 0;
   }
   @include screen(desktop) {
-    border-radius: 8px;
+    border-radius: 0;
   }
   @include screen(desktopWide) {
-    border-radius: 8px;
+    border-radius: 24px;
   }
 }
 
@@ -41,15 +41,15 @@
     border-radius: 0;
   }
   @include screen(tablet) {
-    border-radius: 8px;
+    border-radius: 0;
   }
   @include screen(tabletLandscape) {
-    border-radius: 8px;
+    border-radius: 0;
   }
   @include screen(desktop) {
-    border-radius: 8px;
+    border-radius: 0;
   }
   @include screen(desktopWide) {
-    border-radius: 8px;
+    border-radius: 24px;
   }
 }

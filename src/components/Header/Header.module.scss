@@ -68,8 +68,8 @@
     flex: 1;
   }
   @include screen(tablet) {
-    padding: $space-ll;
-    flex: 1.5;
+    padding: $space-ml 0;
+    flex: 1;
   }
   @include screen(tabletLandscape) {
     padding: $space-ll;

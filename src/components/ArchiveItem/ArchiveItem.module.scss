@@ -6,6 +6,8 @@
 
 .tiles {
   width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
 .thumbnail {
@@ -13,6 +15,9 @@
   width: 100%;
   filter: grayscale(32%);
   transition: all 0.4s ease;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
 
   &:hover {
     transition: all 0.28s ease-in;
@@ -29,4 +34,6 @@
   width: 100%;
   text-align: center;
   color: $light-alpha-100;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }

@@ -20,7 +20,14 @@ const HomePage = ({ className, ...restProps }) => {
       {/* <Join /> */}
       <Location />
       <Archive />
-      <div>
+      <div
+        style={{
+          backgroundImage: 'url("/images/poster.png")',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          paddingBottom: 0,
+        }}>
         <Sponsors />
         <Contact />
       </div>

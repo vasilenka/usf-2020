@@ -1,43 +1,117 @@
 @import 'src/tokens';
 
-.bleed {
-  padding-top: $space-xl;
-  // border-top: 1px solid rgba(0,0,0,.08);
+.root {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(5px);
+}
+
+.header {
+  @include screen(smallPhone) {
+    justify-content: center;
+  }
   @include screen(phone) {
-    padding-top: $space-ml;
-    border-top: 1px solid rgba(0,0,0,.08);
+    justify-content: center;
+  }
+  @include screen(tablet) {
+    justify-content: flex-start;
+  }
+  @include screen(tabletLandscape) {
+    justify-content: flex-start;
+  }
+  @include screen(desktop) {
+    justify-content: flex-start;
+  }
+  @include screen(desktopWide) {
+    justify-content: flex-start;
   }
 }
 
-.root {
-  background: rgba(255,255,255,.92);
-  padding: $space-inset-l;
+.card {
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
+  border-radius: 24px;
 }
 
 .row {
-  composes: row from global;
-  padding: $space-vertical-l;
+  display: grid;
+  align-items: center;
+
+  @include screen(smallPhone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include screen(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include screen(tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include screen(tabletLandscape) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include screen(desktop) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include screen(desktopWide) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .email {
- composes: col-sm-6 from global;
-
- @include screen(phone) {
-  margin: $space-stack-ml;
- }
+  @include screen(smallPhone) {
+    margin-bottom: $space-ll;
+    text-align: center;
+  }
+  @include screen(phone) {
+    margin-bottom: $space-ll;
+    text-align: center;
+  }
+  @include screen(tablet) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
-.socmed {
-  composes: col-sm-6 from global;
-}
-
-.socmed__account {
+.socmedWrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-
-  &:not(:last-child) {
-    margin: $space-stack-ml;
+  width: 100%;
+  @include screen(smallPhone) {
+    justify-content: center;
+  }
+  @include screen(phone) {
+    justify-content: center;
+  }
+  @include screen(tablet) {
+    justify-content: flex-end;
+  }
+  @include screen(tabletLandscape) {
+    justify-content: flex-end;
+  }
+  @include screen(desktop) {
+    justify-content: flex-end;
+  }
+  @include screen(desktopWide) {
+    justify-content: flex-end;
   }
 }
 
@@ -64,29 +138,83 @@
     width: 24px;
     height: 24px;
   }
-
 }
 
 .link {
   display: inline-block;
-  color: $brand-primary-100;
-  transition: all .3s;
+  color: $brand-tertiary-100;
+  transition: all 0.3s;
+  font-weight: $semibold;
+  padding-top: $space-xs;
 
   &:hover,
   &:visited,
   &:focus,
   &:active {
     text-decoration: underline;
-    color: $brand-primary-200;
-    transition: all .3s;
-  }
-
-  @include screen(phone) {
-    font-size: 16px;
-    line-height: 16px;
+    transition: all 0.3s;
   }
 }
 
 .label {
-  margin: $space-stack-ml;
+  @include screen(smallPhone) {
+    margin-bottom: $space-sm;
+    margin-right: 0;
+  }
+  @include screen(phone) {
+    margin-bottom: $space-sm;
+    margin-right: 0;
+  }
+  @include screen(tablet) {
+    margin-right: $space-xs;
+    margin-bottom: 0;
+  }
+  @include screen(tabletLandscape) {
+    margin-right: $space-xs;
+    margin-bottom: 0;
+  }
+  @include screen(desktop) {
+    margin-right: $space-xs;
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-right: $space-xs;
+    margin-bottom: 0;
+  }
+}
+
+.socmed {
+  text-decoration: none;
+  display: block;
+  &:not(:last-child) {
+    margin-right: $space-ml;
+  }
+}
+
+.iconWrapper {
+  cursor: pointer;
+  width: fit-content;
+  display: block;
+  padding: 12px;
+  border-radius: 9999px;
+  background-color: $brand-secondary-200;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 4px $brand-secondary-200;
+    transition: all 0.28s;
+
+    .icon {
+      transition: all 0.28s;
+      filter: drop-shadow(0px 4px 4px $dark-alpha-30);
+    }
+  }
+}
+
+.icon {
+  display: block;
+  color: $light-alpha-100;
+  width: 24px;
+  height: 24px;
+  transition: all 0.4s;
 }

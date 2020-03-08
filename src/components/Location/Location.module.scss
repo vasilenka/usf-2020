@@ -3,23 +3,56 @@
 .root {
   flex-direction: column;
   padding-top: $space-huge;
-  padding-bottom: 500px;
   background: $brand-primary-100;
   position: relative;
+  @include screen(smallPhone) {
+    padding-bottom: 296px;
+  }
+  @include screen(phone) {
+    padding-bottom: 296px;
+  }
+  @include screen(tablet) {
+    padding-bottom: 440px;
+  }
+  @include screen(tabletLandscape) {
+    padding-bottom: 440px;
+  }
+  @include screen(desktop) {
+    padding-bottom: 440px;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: 480px;
+  }
 }
 
 .betawiWrapper {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50%, -33%);
   width: 100%;
   max-width: 70ch;
   user-select: none;
+  @include screen(smallPhone) {
+    transform: translate(-50%, -70%);
+  }
+  @include screen(phone) {
+    transform: translate(-50%, -70%);
+  }
+  @include screen(tablet) {
+    transform: translate(-50%, -76%);
+  }
+  @include screen(tabletLandscape) {
+    transform: translate(-50%, -76%);
+  }
+  @include screen(desktop) {
+    transform: translate(-50%, -33%);
+  }
+  @include screen(desktopWide) {
+    transform: translate(-50%, -33%);
+  }
 }
 
 .container {
-  @include container;
   position: relative;
 
   @include screen(smallPhone) {
@@ -52,10 +85,12 @@
     display: static;
   }
   @include screen(tablet) {
-    display: none;
+    width: 100%;
+    display: static;
   }
   @include screen(tabletLandscape) {
-    display: none;
+    width: 100%;
+    display: static;
   }
   @include screen(desktop) {
     display: none;
@@ -76,18 +111,10 @@
     display: none;
   }
   @include screen(tablet) {
-    position: sticky;
-    top: 72px;
-    display: flex;
-    justify-content: flex-end;
-    padding: $space-vertical-l;
+    display: none;
   }
   @include screen(tabletLandscape) {
-    position: sticky;
-    top: 72px;
-    display: flex;
-    justify-content: flex-end;
-    padding: $space-vertical-l;
+    display: none;
   }
   @include screen(desktop) {
     position: sticky;
@@ -121,16 +148,16 @@
     border-radius: 0px;
   }
   @include screen(tablet) {
-    border-radius: 16px;
-    padding: $space-l;
-    justify-self: flex-end;
-    max-width: 320px;
+    max-width: 100%;
+    border-radius: 0px;
+    padding: $space-l $space-ml;
+    border-radius: 0px;
   }
   @include screen(tabletLandscape) {
-    border-radius: 16px;
-    padding: $space-l;
-    justify-self: flex-end;
-    max-width: 320px;
+    max-width: 100%;
+    border-radius: 0px;
+    padding: $space-l $space-ml;
+    border-radius: 0px;
   }
   @include screen(desktop) {
     border-radius: 16px;

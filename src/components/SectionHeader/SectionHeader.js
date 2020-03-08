@@ -12,6 +12,7 @@ const SectionHeader = ({
   className,
   title,
   subtitle,
+  center,
   ...restProps
 }) => {
   return (
@@ -21,12 +22,10 @@ const SectionHeader = ({
         [styles.narrow]: narrow,
         [styles.bleed]: bleed,
         [styles.full]: full,
+        [styles.center]: center,
         [className]: className,
       })}>
-      <div className={styles.iconContainer}>
-        {/* <i className={classnames(styles.icon, `fas fa-${icon}`)} /> */}
-        {icon}
-      </div>
+      {icon && <div className={styles.iconContainer}>{icon}</div>}
       <div className={styles.titleContainer}>
         <Text className={classnames(styles.title)} heading2 as="h2">
           {title}
