@@ -52,8 +52,8 @@ module.exports = {
         name: `The 7th Urban Social Forum`,
         short_name: `7th USF`,
         start_url: `/`,
-        background_color: `#feda3f`,
-        theme_color: `#feda3f`,
+        background_color: `#5a5eaa`,
+        theme_color: `#5a5eaa`,
         display: `minimal-ui`,
         icon: `src/assets/images/logo-small.png`, // This path is relative to the root of the site.
       },
