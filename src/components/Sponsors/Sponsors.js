@@ -21,18 +21,13 @@ const Sponsors = ({ className }) => {
   return (
     <Container id="Partners" className={styles.root}>
       <Container narrow className={styles.card}>
-        <SectionHeader
-          bleed
-          center
-          icon={<FaStar />}
-          title="Organizer &amp; Partners"
-        />
+        <SectionHeader bleed center icon={<FaStar />} title="Organizer" />
         <FirstRow />
-        <SecondRow />
+        {/* <SecondRow />
         <ThirdRow />
         <FourthRow />
-        <FifthRow />
-        <div className={styles.row}>
+        <FifthRow /> */}
+        {/* <div className={styles.row}>
           <Text
             heading4
             style={{
@@ -42,7 +37,7 @@ const Sponsors = ({ className }) => {
             Media Partners
           </Text>
         </div>
-        <MediaPartners />
+        <MediaPartners /> */}
       </Container>
     </Container>
   )

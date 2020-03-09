@@ -16,13 +16,13 @@ const About = ({ className, ...restProps }) => {
           <br />
           “Another City is Possible!”
         </Text>
-        <Button
+        {/* <Button
           handleClick="https://bit.ly/informasiusf6"
           className={styles.cta}
           primary
           large>
           View Schedule and Information Booklet
-        </Button>
+        </Button> */}
         <Text className={styles.paragraph} medium as="p">
           Greetings from the Organizing Committee of the 7<sup>th</sup> Urban
           Social Forum! Year after year the Urban Social Forum grows, in doing

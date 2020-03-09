@@ -46,12 +46,25 @@ const Header = ({ className, ...restProps }) => {
               We invite you to be a part of the movement.
             </Text>
             <a
-              href="http://bit.ly/usf6solo"
+              href="http://bit.ly/usf7jakarta"
+              target="_blank"
+              style={{
+                textDecoration: 'none',
+                marginBottom: 12,
+                display: 'block',
+              }}
+              rel="noopener noreferrer">
+              <Button primary large className={styles.cta}>
+                Join as a Participant
+              </Button>
+            </a>
+            <a
+              href="http://bit.ly/usf7volunteer"
               target="_blank"
               style={{ textDecoration: 'none' }}
               rel="noopener noreferrer">
               <Button primary large className={styles.cta}>
-                Join as a Participant
+                Join as a Volunteer
               </Button>
             </a>
           </div>

@@ -20,7 +20,7 @@ const Archive = ({ className, ...restProps }) => {
       <div className={styles.artwork}>
         <Transportation />
       </div>
-      <Container as="section" className={styles.container}>
+      <Container narrow as="section" className={styles.container}>
         <SectionHeader bleed icon={<FaArchive />} title="Archive" />
         <div className={styles.archiveGrid}>
           <ArchiveItem
@@ -38,7 +38,7 @@ const Archive = ({ className, ...restProps }) => {
           <ArchiveItem
             title="Video"
             img={<Video alt="video thumbnail" />}
-            url="https://www.youtube.com/watch?v=B4H7BhTgv50"
+            url="https://www.youtube.com/channel/UCjv-tzW5_3wEl4sHHR63ULw"
           />
         </div>
       </Container>

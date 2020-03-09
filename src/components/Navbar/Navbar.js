@@ -47,7 +47,8 @@ const Modal = ({ overlay, setOverlay, closeOverlay }) => {
           Archive
         </NavbarMenu>
         <NavbarMenu to="#Partners" onClick={closeOverlay}>
-          Organizers &amp; Partners
+          {/* Organizers &amp; Partners */}
+          Organizers
         </NavbarMenu>
         <NavbarMenu to="#Contact" onClick={closeOverlay}>
           Contact Us
@@ -100,7 +101,8 @@ const Navbar = ({}) => {
           <NavbarMenu to="#About">About</NavbarMenu>
           <NavbarMenu to="#Location">Location</NavbarMenu>
           <NavbarMenu to="#Archive">Archive</NavbarMenu>
-          <NavbarMenu to="#Partners">Organizers &amp; Partners</NavbarMenu>
+          {/* <NavbarMenu to="#Partners">Organizers &amp; Partners</NavbarMenu> */}
+          <NavbarMenu to="#Partners">Organizers</NavbarMenu>
           <NavbarMenu to="#Contact">Contact Us</NavbarMenu>
         </div>
       </Container>

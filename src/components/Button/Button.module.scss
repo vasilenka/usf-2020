@@ -54,8 +54,25 @@
 .large {
   border-width: 1px;
   padding: 15px 31px;
-  font-size: $heading-3;
   line-height: 24px;
+  @include screen(smallPhone) {
+    font-size: $heading-4;
+  }
+  @include screen(phone) {
+    font-size: $heading-4;
+  }
+  @include screen(tablet) {
+    font-size: $heading-4;
+  }
+  @include screen(tabletLandscape) {
+    font-size: $heading-3;
+  }
+  @include screen(desktop) {
+    font-size: $heading-3;
+  }
+  @include screen(desktopWide) {
+    font-size: $heading-3;
+  }
 }
 .largeAlt {
   border-width: 2px;
