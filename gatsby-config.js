@@ -55,7 +55,7 @@ module.exports = {
         background_color: `#feda3f`,
         theme_color: `#feda3f`,
         display: `minimal-ui`,
-        icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo-small.png`, // This path is relative to the root of the site.
       },
     },
 

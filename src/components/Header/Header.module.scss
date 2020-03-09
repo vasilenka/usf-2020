@@ -60,11 +60,11 @@
 
 .text {
   @include screen(smallPhone) {
-    padding: $space-ml 0;
+    padding: $space-ll 0;
     flex: 1;
   }
   @include screen(phone) {
-    padding: $space-ml 0;
+    padding: $space-ll 0;
     flex: 1;
   }
   @include screen(tablet) {
@@ -109,6 +109,27 @@
   }
   @include screen(desktopWide) {
     margin: $space-stack-m;
+  }
+}
+
+.headerLogo {
+  @include screen(smallPhone) {
+    padding-top: $space-ll;
+  }
+  @include screen(phone) {
+    padding-top: $space-ll;
+  }
+  @include screen(tablet) {
+    padding-top: $space-xl;
+  }
+  @include screen(tabletLandscape) {
+    padding-top: $space-xl;
+  }
+  @include screen(desktop) {
+    padding-top: $space-xl;
+  }
+  @include screen(desktopWide) {
+    padding-top: $space-xl;
   }
 }
 

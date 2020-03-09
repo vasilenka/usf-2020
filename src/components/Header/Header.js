@@ -15,7 +15,7 @@ import Container from './../../layouts/Container/Container'
 const Header = ({ className, ...restProps }) => {
   return (
     <Container as="section" id="header">
-      <Container as="section" bleed style={{ paddingTop: '64px' }}>
+      <Container as="section" bleed className={styles.headerLogo}>
         <Logo
           className={classnames(styles.logo)}
           alt="The 7th Urban Social Forum"
