@@ -31,7 +31,7 @@ const Location = () => {
         <div className={styles.addressContainer}>
           <div className={styles.card}>
             <Text className={styles.title} heading5 as="h3">
-              Main Venues
+              Main Venue
             </Text>
             <Venue
               name="Museum Nasional Indonesia"
@@ -46,7 +46,7 @@ const Location = () => {
       <div className={styles.addressPhone}>
         <div className={styles.card}>
           <Text className={styles.title} heading4 as="h3">
-            Main Venues
+            Main Venue
           </Text>
           <Venue
             name="Museum Nasional Indonesia"
