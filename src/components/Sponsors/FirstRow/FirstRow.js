@@ -4,18 +4,28 @@ import cx from 'classnames'
 
 import kk from './kk.png'
 
-export const LogoContainer = ({ src, alt, name }) => {
+export const LogoContainer = ({ to, src, alt, name }) => {
   return (
-    <div className={styles.logoContainer}>
+    <a
+      href={to}
+      rel="noopener noreferrer"
+      target="_blank"
+      title={alt}
+      className={styles.logoContainer}>
       <img src={src} className={cx(styles.logo, styles[name])} alt={alt} />
-    </div>
+    </a>
   )
 }
 
 const FirstRow = ({ className, ...restProps }) => {
   return (
     <div className={styles.root}>
-      <LogoContainer src={kk} alt="KotaKita" name="kotakita" />
+      <LogoContainer
+        to="http://www.kotakita.org"
+        src={kk}
+        alt="Kota Kita"
+        name="kotakita"
+      />
     </div>
   )
 }

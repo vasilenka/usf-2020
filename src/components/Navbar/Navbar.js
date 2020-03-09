@@ -94,7 +94,7 @@ const Navbar = ({}) => {
       <Container as="nav" className={classnames(styles.container)}>
         <NavbarMenu to="#Header">
           <div className={styles.logoDesktop}>
-            <LogoSmall />
+            <LogoSmall title="The 7th Urban Social Forum logo" />
           </div>
         </NavbarMenu>
         <div>
