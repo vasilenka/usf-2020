@@ -12,7 +12,7 @@ import Venue from '../Venue/Venue'
 
 import Container from './../../layouts/Container/Container'
 
-const Location = ({ className, ...restProps }) => {
+const Location = () => {
   return (
     <Container bleed id="Location" className={classnames(styles.root)}>
       <div className={styles.betawiWrapper}>
@@ -36,7 +36,7 @@ const Location = ({ className, ...restProps }) => {
             <Venue
               name="Museum Nasional Indonesia"
               address="Jl. Medan Merdeka Barat No.12, Gambir, Kota Jakarta Pusat"
-              url="https://goo.gl/maps/m7jLrWyYotC2"
+              url="https://goo.gl/maps/Xkqz9JKq42ZPAkLX6"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ const Location = ({ className, ...restProps }) => {
           <Venue
             name="Museum Nasional Indonesia"
             address="Jl. Medan Merdeka Barat No.12, Gambir, Kota Jakarta Pusat"
-            url="https://goo.gl/maps/m7jLrWyYotC2"
+            url="https://goo.gl/maps/Xkqz9JKq42ZPAkLX6"
           />
         </div>
       </div>
