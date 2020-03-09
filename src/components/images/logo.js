@@ -10,7 +10,7 @@ const Image = ({ url, ...restProps }) => {
           placeholderImage: file(relativePath: { eq: "logo.png" }) {
             childImageSharp {
               fluid(maxWidth: 1920) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }

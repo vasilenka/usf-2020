@@ -10,7 +10,7 @@ const Betawi = ({ url, ...restProps }) => {
           placeholderImage: file(relativePath: { eq: "keluarga-betawi.png" }) {
             childImageSharp {
               fluid(maxWidth: 1080) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }

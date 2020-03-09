@@ -10,7 +10,7 @@ const Image = ({ url, ...restProps }) => {
           placeholderImage: file(relativePath: { eq: "ondel-ondel.png" }) {
             childImageSharp {
               fluid(maxWidth: 1080) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }

@@ -2,8 +2,6 @@ import styles from './Header.module.scss'
 import React from 'react'
 import classnames from 'classnames'
 
-import cover from './img/ondel-ondel.png'
-
 import Logo from '../images/logo'
 import Hero from './../images/hero'
 

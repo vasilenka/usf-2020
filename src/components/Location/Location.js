@@ -12,12 +12,14 @@ import Venue from '../Venue/Venue'
 
 import Container from './../../layouts/Container/Container'
 
-const Location = () => {
+const Location = ({ inView }) => {
   return (
     <Container bleed id="Location" className={classnames(styles.root)}>
-      <div className={styles.betawiWrapper}>
-        <Betawi />
-      </div>
+      {inView && (
+        <div className={styles.betawiWrapper}>
+          <Betawi />
+        </div>
+      )}
       <Container>
         <SectionHeader
           bleed
@@ -41,7 +43,7 @@ const Location = () => {
           </div>
         </div>
 
-        <Map isMarkerShown />
+        {inView && <Map isMarkerShown />}
       </Container>
       <div className={styles.addressPhone}>
         <div className={styles.card}>

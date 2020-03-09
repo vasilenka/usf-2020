@@ -69,6 +69,7 @@
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.9.0",
+    "react-intersection-observer": "^8.26.1",
     "recompose": "^0.30.0"
   },
   "devDependencies": {

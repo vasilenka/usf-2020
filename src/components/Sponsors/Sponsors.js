@@ -17,12 +17,12 @@ import FourthRow from './FourthRow/FourthRow'
 import FifthRow from './FifthRow/FifthRow'
 import MediaPartners from './MediaPartners/MediaPartners'
 
-const Sponsors = ({ className }) => {
+const Sponsors = ({ inView, className }) => {
   return (
     <Container id="Partners" className={styles.root}>
       <Container narrow className={styles.card}>
         <SectionHeader bleed center icon={<FaStar />} title="Organizer" />
-        <FirstRow />
+        {inView && <FirstRow />}
         {/* <SecondRow />
         <ThirdRow />
         <FourthRow />
