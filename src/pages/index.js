@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
+import createPersistedState from 'use-persisted-state'
 
 import Default from './../layouts/Default/Default'
 
@@ -11,6 +12,9 @@ import Location from '../components/Location/Location'
 import Archive from '../components/Archive/Archive'
 import Sponsors from '../components/Sponsors/Sponsors'
 import Contact from '../components/Contact/Contact'
+import Popup from '../components/Popup/Popup'
+
+const usePersistedView = createPersistedState('view-popup')
 
 const HomePage = ({ className, ...restProps }) => {
   const [ref, inView] = useInView({
@@ -19,10 +23,21 @@ const HomePage = ({ className, ...restProps }) => {
     triggerOnce: true,
   })
 
+  const [viewed, setViewed] = usePersistedView(false)
+  const [display, setDisplay] = useState(true)
+
   return (
     <Default>
       <Navbar />
-      <Header />
+      {!viewed && display && (
+        <Popup
+          setDisplay={setDisplay}
+          viewed={viewed}
+          display={display}
+          setViewed={setViewed}
+        />
+      )}
+      <Header setViewed={setViewed} setDisplay={setDisplay} />
       <span ref={ref}></span>
       <About />
       {/* <Join /> */}

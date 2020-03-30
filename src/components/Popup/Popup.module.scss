@@ -1,0 +1,222 @@
+@import 'src/tokens';
+
+.root {
+  padding-top: $space-ll;
+  padding-bottom: $space-ll;
+  color: $light-hex-100;
+}
+
+.iconWrapper {
+  cursor: pointer;
+  position: absolute;
+  top: $space-ml;
+  right: $space-ml;
+  border-radius: 9999px;
+  background-color: $dark-alpha-30;
+  padding: 8px;
+}
+
+.icon {
+  @include screen(smallPhone) {
+    width: 32px;
+    height: 32px;
+  }
+  @include screen(phone) {
+    width: 32px;
+    height: 32px;
+  }
+  @include screen(tablet) {
+    width: 32px;
+    height: 32px;
+  }
+  @include screen(tabletLandscape) {
+    width: 40px;
+    height: 40px;
+  }
+  @include screen(desktop) {
+    width: 40px;
+    height: 40px;
+  }
+  @include screen(desktopWide) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.header {
+  padding-top: $space-xl;
+  @include screen(smallPhone) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(phone) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(tablet) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: $space-ll;
+  }
+  @include screen(desktop) {
+    margin-bottom: $space-ll;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: $space-ll;
+  }
+}
+
+.content {
+  color: $light-alpha-90;
+  display: flex;
+
+  @include screen(smallPhone) {
+    flex-direction: column;
+  }
+  @include screen(phone) {
+    flex-direction: column;
+  }
+  @include screen(tablet) {
+    flex-direction: column;
+  }
+  @include screen(tabletLandscape) {
+    flex-direction: row;
+  }
+  @include screen(desktop) {
+    flex-direction: row;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 16px 12px -4px $dark-alpha-40;
+  height: fit-content;
+
+  @include screen(smallPhone) {
+    margin-bottom: $space-ml;
+    min-width: 100%;
+  }
+  @include screen(phone) {
+    margin-bottom: $space-ml;
+    min-width: 100%;
+  }
+  @include screen(tablet) {
+    margin-bottom: $space-ml;
+    min-width: 100%;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: 0;
+    min-width: 40%;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+    min-width: 40%;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+    min-width: 40%;
+  }
+}
+
+.image {
+  // border-radius: 12px;
+}
+
+.textContainer {
+  @include screen(smallPhone) {
+    padding-left: 0;
+  }
+  @include screen(phone) {
+    padding-left: 0;
+  }
+  @include screen(tablet) {
+    padding-left: 0;
+  }
+  @include screen(tabletLandscape) {
+    padding-left: $space-ll;
+  }
+  @include screen(desktop) {
+    padding-left: $space-ll;
+  }
+  @include screen(desktopWide) {
+    padding-left: $space-ll;
+  }
+}
+
+.row {
+  display: block;
+}
+
+.link {
+  display: block;
+  margin-bottom: $space-ll;
+  color: $brand-primary-200;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.socmedWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @include screen(smallPhone) {
+    justify-content: center;
+  }
+  @include screen(phone) {
+    justify-content: center;
+  }
+  @include screen(tablet) {
+    justify-content: center;
+  }
+  @include screen(tabletLandscape) {
+    justify-content: flex-start;
+  }
+  @include screen(desktop) {
+    justify-content: flex-start;
+  }
+  @include screen(desktopWide) {
+    justify-content: flex-start;
+  }
+}
+
+.socmedIconWrapper {
+  cursor: pointer;
+  width: fit-content;
+  display: block;
+  padding: 12px;
+  border-radius: 9999px;
+  background-color: $brand-primary-200;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 4px $brand-primary-200;
+    transition: all 0.28s;
+
+    .socmedIcon {
+      transition: all 0.28s;
+      filter: drop-shadow(0px 4px 4px $dark-alpha-30);
+    }
+  }
+}
+
+.socmed {
+  text-decoration: none;
+  display: block;
+  &:not(:last-child) {
+    margin-right: $space-ml;
+  }
+}
+
+.socmedIcon {
+  display: block;
+  color: $brand-secondary-200;
+  width: 24px;
+  height: 24px;
+  transition: all 0.4s;
+}

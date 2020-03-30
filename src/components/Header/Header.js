@@ -10,7 +10,7 @@ import Button from '../Button/Button'
 
 import Container from './../../layouts/Container/Container'
 
-const Header = ({ className, ...restProps }) => {
+const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
   return (
     <Container as="section" id="header">
       <Container as="section" bleed className={styles.headerLogo}>
@@ -29,7 +29,8 @@ const Header = ({ className, ...restProps }) => {
           />
           <div className={classnames(styles.text)}>
             <Text className={classnames(styles.subtitle)} heading2 as="h2">
-              Jakarta, 18 April 2020
+              {/* Jakarta, 18 April 2020 */}
+              Jakarta, 2020
             </Text>
             <Text className={classnames(styles.description)} normal as="p">
               The Urban Social Forum is an annual event that provides an open
@@ -40,9 +41,9 @@ const Header = ({ className, ...restProps }) => {
               people to put forward alternative ideas and imagine ‘Another City
               is Possible!’
             </Text>
-            <Text className={classnames(styles.description)} normal as="p">
+            {/* <Text className={classnames(styles.description)} normal as="p">
               We invite you to be a part of the movement.
-            </Text>
+            </Text> */}
             <a
               href="http://bit.ly/usf7jakarta"
               target="_blank"
@@ -56,7 +57,7 @@ const Header = ({ className, ...restProps }) => {
                 Join as a Participant
               </Button>
             </a>
-            <a
+            {/* <a
               href="http://bit.ly/usf7volunteer"
               target="_blank"
               style={{ textDecoration: 'none' }}
@@ -64,7 +65,16 @@ const Header = ({ className, ...restProps }) => {
               <Button primary large className={styles.cta}>
                 Join as a Volunteer
               </Button>
-            </a>
+            </a> */}
+            <Button
+              default
+              large
+              onClick={() => {
+                setDisplay(true), setViewed(false)
+              }}
+              className={styles.cta}>
+              Postponement Info
+            </Button>
           </div>
         </div>
       </Container>

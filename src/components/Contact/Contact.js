@@ -10,7 +10,7 @@ import SectionHeader from '../SectionHeader/SectionHeader'
 
 import Container from './../../layouts/Container/Container'
 
-const Icon = ({ icon, ...restProps }) => {
+export const Icon = ({ icon, ...restProps }) => {
   return <div className={styles.iconWrapper}>{icon}</div>
 }
 
