@@ -1,9 +1,60 @@
 @import 'src/tokens';
 
+.wrapper {
+  @include screen(smallPhone) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include screen(phone) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include screen(tablet) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .root {
-  padding-top: $space-ll;
+  // padding-top: $space-ll;
   padding-bottom: $space-ll;
   color: $light-hex-100;
+  background-color: $brand-tertiary-200;
+  // min-height: 100vh;
+
+  @include screen(smallPhone) {
+    padding-left: $space-ml;
+    padding-right: $space-ml;
+    border-radius: 0;
+  }
+  @include screen(phone) {
+    padding-left: $space-ml;
+    padding-right: $space-ml;
+    border-radius: 0;
+  }
+  @include screen(tablet) {
+    padding-left: $space-ml;
+    padding-right: $space-ml;
+    border-radius: 0;
+  }
+  @include screen(tabletLandscape) {
+    padding-left: $space-ll;
+    padding-right: $space-ll;
+    border-radius: $space-m;
+  }
+  @include screen(desktop) {
+    padding-left: $space-ll;
+    padding-right: $space-ll;
+    border-radius: $space-m;
+  }
+  @include screen(desktopWide) {
+    padding-left: $space-ll;
+    padding-right: $space-ll;
+    border-radius: $space-m;
+  }
 }
 
 .iconWrapper {

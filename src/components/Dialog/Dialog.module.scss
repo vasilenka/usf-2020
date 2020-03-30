@@ -20,8 +20,9 @@
 }
 
 .dark {
-  background: $brand-tertiary-100;
   color: $light-alpha-100;
+  // background: $brand-tertiary-40;
+  background-color: $dark-alpha-80;
 }
 
 .light {

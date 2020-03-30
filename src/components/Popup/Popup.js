@@ -1,5 +1,5 @@
 import styles from './Popup.module.scss'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import cx from 'classnames'
 
 import CloseIcon from '../../assets/svg/close.inline.svg'
@@ -16,6 +16,27 @@ export const Icon = ({ icon, ...restProps }) => {
   return <div className={styles.socmedIconWrapper}>{icon}</div>
 }
 
+function useOutsideAlerter(ref, cb) {
+  useEffect(() => {
+    /**
+     * Alert if clicked on outside of element
+     */
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        console.log('You clicked outside of me!')
+        cb()
+      }
+    }
+
+    // Bind the event listener
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [ref])
+}
+
 const Popup = ({
   children,
   setViewed,
@@ -27,13 +48,16 @@ const Popup = ({
 }) => {
   useLockBodyScroll()
 
+  const wrapperRef = useRef(null)
+  useOutsideAlerter(wrapperRef, () => setDisplay(false))
+
   return (
     <Dialog dark>
-      <Container narrow as="section">
+      <Container narrow as="section" className={styles.wrapper}>
         <div className={styles.iconWrapper} onClick={() => setDisplay(false)}>
           <CloseIcon className={styles.icon} />
         </div>
-        <div className={cx(styles.root)} {...restProps}>
+        <div ref={wrapperRef} className={cx(styles.root)} {...restProps}>
           <header className={styles.header}>
             <Text heading1 as="h1">
               Urban Social Forum 7 Postponement

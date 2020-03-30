@@ -5,7 +5,20 @@ import { string, bool, object, node, oneOfType } from 'prop-types'
 import { motion } from 'framer-motion'
 
 const Container = React.forwardRef(
-  ({ as, children, className, narrow, bleed, post, fixLeft, fixRight, ...restProps }, forwardedRef) => {
+  (
+    {
+      as,
+      children,
+      className,
+      narrow,
+      bleed,
+      post,
+      fixLeft,
+      fixRight,
+      ...restProps
+    },
+    forwardedRef
+  ) => {
     let Component = motion[as]
 
     return (
