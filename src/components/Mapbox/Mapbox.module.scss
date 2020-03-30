@@ -1,0 +1,51 @@
+@import 'src/tokens';
+
+.root {
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $light-alpha-70;
+  box-shadow: 0px 16px 40px -12px rgba(0, 0, 0, 0.2);
+  @include screen(smallPhone) {
+    border-radius: 0;
+  }
+  @include screen(phone) {
+    border-radius: 0;
+  }
+  @include screen(tablet) {
+    border-radius: 0;
+  }
+  @include screen(tabletLandscape) {
+    border-radius: 0;
+  }
+  @include screen(desktop) {
+    border-radius: 0;
+  }
+  @include screen(desktopWide) {
+    border-radius: 24px;
+  }
+}
+
+.logoWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  background-color: $dark-hex-80;
+  box-shadow: 0px 2px 4px $dark-alpha-20;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid $brand-secondary-200;
+}
+
+.logo {
+  width: 40px;
+  display: block;
+}

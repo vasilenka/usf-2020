@@ -30,9 +30,11 @@ const SectionHeader = ({
         <Text className={classnames(styles.title)} heading2 as="h2">
           {title}
         </Text>
-        <Text className={classnames(styles.subtitle)} normal>
-          {subtitle}
-        </Text>
+        {subtitle && (
+          <Text className={classnames(styles.subtitle)} normal>
+            {subtitle}
+          </Text>
+        )}
       </div>
     </header>
   )
