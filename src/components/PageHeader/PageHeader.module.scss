@@ -1,0 +1,43 @@
+@import 'src/tokens';
+
+.root {
+}
+
+.langWrapper {
+  padding-top: $space-ll;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lang {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: $semibold;
+  color: $dark-alpha-60;
+  padding: 16px 24px;
+  font-variant-numeric: tabular-nums;
+
+  &.active {
+    color: $brand-secondary-300;
+    text-decoration: underline;
+  }
+}
+
+.langSeparator {
+  padding-left: $space-s;
+  padding-right: $space-s;
+}
+
+.logoContainer {
+  padding-bottom: $space-ll;
+}
+
+.footer {
+  background-color: $brand-primary-200;
+  padding-top: $space-ll;
+  padding-bottom: $space-ll;
+}
+
+.title {
+}
