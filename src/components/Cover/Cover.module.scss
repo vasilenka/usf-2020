@@ -1,0 +1,13 @@
+@import 'src/tokens';
+
+.root {
+  background-color: $brand-primary-200;
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
+}
+
+.paragraph {
+  &:not(:last-child) {
+    padding-bottom: $space-ml;
+  }
+}

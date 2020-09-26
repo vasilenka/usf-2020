@@ -7,7 +7,14 @@ import Logo from '../images/logo'
 import Container from './../../layouts/Container/Container'
 import Text from '../Text/Text'
 
-const PageHeader = ({ title, active, setActive, className, ...restProps }) => {
+const PageHeader = ({
+  title,
+  overview,
+  active,
+  setActive,
+  className,
+  ...restProps
+}) => {
   return (
     <Container bleed as="section" className={cx(styles.root)} {...restProps}>
       <Container as="header" className={styles.langWrapper}>

@@ -1,0 +1,76 @@
+@import 'src/tokens';
+
+.root {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 2px solid $dark-alpha-20;
+  padding-top: $space-ll;
+  padding-bottom: $space-ll;
+}
+
+.cta {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  background-color: $brand-tertiary-200;
+  border-radius: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.chevron {
+  display: block;
+  width: 48px;
+  height: 48px;
+  color: $light-alpha-100;
+  transform: rotate(180deg);
+  transition: all 0.4s ease-in-out;
+
+  &.rotate {
+    transition: all 0.28s ease-in-out;
+    transform: rotate(0deg);
+  }
+}
+
+.content {
+  padding-left: $space-ml;
+}
+
+.title {
+  line-height: 48px;
+}
+
+.videoWrapper {
+  margin-top: $space-ml;
+  overflow: hidden;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.paragraph {
+  padding-top: $space-ml;
+  max-width: 80ch;
+}
+
+.url {
+  text-decoration: underline;
+  color: $brand-secondary-200;
+  font-weight: $bold;
+}
+
+.item {
+  padding-top: $space-xs;
+  padding-bottom: $space-xs;
+  color: $dark-alpha-60;
+}
+
+.value {
+  font-weight: $semibold;
+  color: $dark-alpha-80;
+}
+
+.overline {
+}

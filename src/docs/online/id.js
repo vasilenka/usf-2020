@@ -1,19 +1,19 @@
 export const cover = [
   {
-    bold: 'Since it was first organized in 2013,',
+    bold: 'Sejak pertama kali diselenggarakan tahun 2013,',
     text:
-      'The Urban Social Forum (USF) has provided an open and inclusive space to discuss new ideas and share knowledge as well as lessons learned; and also become a place of gathering and networking for urban activists and organizations working on urban issues in Indonesia. With various innovative efforts through the years, The USF has reached more citizens from burgeoning cities all over Indonesia, Asia, and beyond. Utilizing the latest technology platforms, we remain steadfast in our mission of decentralizing the forum and spreading the spirit of urban activism to achieve greater impact.',
+      'Urban Social Forum (USF) menjadi ruang terbuka dan inklusif untuk berdiskusi tentang gagasan, bertukar pengalaman dan pengetahuan, serta ruang bertemu dan berjejaring aktivis sosial urban dan organisasi yang bekerja dan bergiat di isu-isu perkotaan di Indonesia. Melalui berbagai inovasi, USF berusaha menjangkau lebih banyak partisipan dari berbagai kota di Indonesia hingga di Asia dan jaringan global. Gagasan mendesentralisasi semangat dan penyelenggaraan USF menjadi upaya-upaya yang akan terus kami kembangkan untuk membuat dampak yang lebih besar dengan memanfaatkan teknologi.',
   },
-  "In 2020, the USF as well as the rest of the world were faced with unprecedented challenges brought on by the COVID-19 pandemic. However, we didn't let the situation reduce the enthusiasm for urban activism. Instead, we saw it as an opportunity to set up online discussions with the support of our collaborators. Eights online public sessions have been organized on accessible platforms from May to August 2020, involving participants from various cities in Indonesia. Discussing a range of relevant urban issues, each of the sessions were organized through a video conferencing platform and are also streamed on Youtube, in collaboration with various peer organizations, community groups, and initiatives. Participants were able to join in the discussion, ask questions, and actively express their opinions through the eight online sessions.",
+  'Di tahun 2020 ini, di tengah tantangan pandemi global COVID-19, tidak menyurutkan semangat dan menjadi peluang baik bagi USF untuk membuat sesi-sesi diskusi daring dengan melibatkan mitra-mitra yang lebih beragam. Diskusi daring ini mengundang penyelenggara dan partisipan dari berbagai kota, menggunakan platform yang mudah diakses dan bersifat terbuka untuk publik. Sesi daring USF terdiri atas rangkaian beberapa diskusi dengan topik beragam yang berkolaborasi dengan organisasi, komunitas, dan inisiatif di berbagai kota, yang diselenggarakan melalui platform komunikasi video dan ditayangkan dalam kanal Youtube. Peserta dapat berpartisipasi, mengajukan pertanyaan, serta secara aktif ikut menanggapi dalam delapan sesi daring terakhir yang kami selenggarakan sepanjang Mei-Agustus 2020.',
 
-  'Although the space has moved online, our mission has remained. USF believes in providing a safe space for important discussions and conversations on urban issues - which is even more crucial now as the pandemic has further exposed the impact of persisting challenges, such as inclusivity and mobility. Going online has also allowed for more open conversations and diverse participants.',
+  'Melalui kegiatan daring, kami berharap bisa mengisi kebutuhan ruang diskusi dan memantik percakapan yang justru dirasa semakin penting ketika pandemi menunjukkan dengan lebih jelas berbagai tantangan perkotaan yang mendesak. Dengan penyelenggaraan daring, kesempatan untuk membuka ruang diskusi yang semakin terbuka dan mengundang lebih beragam peserta menjadi peluang yang lebih mungkin dilakukan.',
 
-  'Here, we have summarized eight online sessions below and took note of important insights which could be followed up. All the sessions are available on YouTube for you to revisit at any time!',
+  'Kami merangkum delapan sesi daring dan mencatat hal-hal penting yang bisa didiskusikan lebih jauh, serta mengundangmu untuk menonton tayangan ulangnya di kanal YouTube kami!',
 ]
 
 export const panels = [
   {
-    title: 'Urban Mobility in the time of COVID-19 Pandemic',
+    title: 'Mobilitas Warga Kota di Masa Pandemi',
     organizers: [
       {
         name: 'KotaKita',
@@ -29,10 +29,10 @@ export const panels = [
     link: 'https://youtube.com/watch?v=8IP71Hz6T84&t=137s',
     code: '8IP71Hz6T84',
     body:
-      'The COVID-19 pandemic has impacted the intensity and patterns of citizens’ mobility as almost everyone has had to maintain physical distance from each other, work from home, and cancel trips as an effort to slow down infection rates. At the same time, limited public transportation services have encouraged some to start using bicycles when going to places nearby. Amidst these challenges, more attention needs to be placed on vulnerable groups such as women, children, and persons with disabilities and ensure they are able to carry out activities safely . In this discussion, we explored insights on mobility challenges during this unprecedented time and encouraged conversations on the vision of resilient and sustainable cities; one of the solutions include designing more facilities that are accessible by walking and cycling, and are friendly to vulnerable groups such as people with disabilities.',
+      'Situasi pandemi yang mengharuskan warga kota membatasi aktivitas dalam kerumunan, mengusahakan bekerja dari rumah, membatalkan berbagai perjalanan, mau tak mau, mengubah intensitas dan pola mobilitas warga. Layanan transportasi publik yang dibatasi, membuat kegiatan bersepeda kembali digandrungi. Di tengah keterbatasan, perhatian tidak boleh lepas dari kelompok rentan seperti perempuan, anak-anak, dan penyandang disabilitas untuk bisa melakukan kegiatan mobilitasnya dengan aman. Diskusi ini merangkum tantangan mobilitas di kondisi terbatas, serta mendorong diskusi lebih jauh mengenai visi kota yang tangguh dan lestari, salah satunya fasilitas yang mudah diakses dengan berjalan kaki dan bersepeda, serta ramah bagi kelompok rentan seperti penyandang disabilitas.',
   },
   {
-    title: 'The Dynamics of Urban Kampung during a Pandemic',
+    title: 'Dinamika Kampung Kota dalam Merespon Pandemi',
     organizers: [
       {
         name: 'KotaKita',
@@ -48,11 +48,11 @@ export const panels = [
     link: 'https://www.youtube.com/watch?v=fLyfkNLYQqg&t=3s',
     code: 'fLyfkNLYQqg',
     body:
-      'During the months that social restrictions were put in place in Indonesia due to the pandemic, citizens initiated various efforts to mitigate the outbreak. In Kampungs, residents followed suit in limiting access to their neighborhood. Known for its high density, Kampungs face many challenges in maintaining health protocols, especially on keeping a safe distance from each other. Kampung residents are also vulnerable to the detrimental economic impacts brought on by the pandemic. Despite these challenges, Kampungs are supported by a long-established social and solidarity system which encourages various community-based efforts. This session not only discussed the challenges faced by residents in the urban kampung, but also explored what could be done with potential solutions such as community-based and cooperative small enterprises, neighborhood monitoring mechanism, and collective participation in managing social assistance from the government.',
+      'Selama beberapa bulan pembatasan dilakukan di Indonesia, warga kota melakukan berbagai usaha yang mendukung upaya menghambat penyebaran wabah. Di kampung-kampung kota, warga menutup akses kampung secara swadaya. Namun, tidak dapat dipungkiri, menjaga protokol kesehatan terutama terkait menjaga jarak cukup sulit dilakukan di permukiman yang padat seperti yang ditemukan di beberapa kampung. Apalagi, banyak dari warga juga mengalami dampak ekonomi yang signifikan. Namun, kampung kota didukung sistem sosial dan solidaritas yang sudah terbentuk sejak lama yang pada akhirnya mendorong berbagai usaha gotong royong warga. Diskusi ini tidak hanya membahas tantangan yang dihadapi warga di kampung kota, tetapi juga apa yang bisa dilakukan - termasuk membuat usaha kecil berbasis komunitas, mendorong mekanisme saling mengawasi, serta turut berpartisipasi dalam mengontrol bantuan pemerintah.',
   },
   {
     title:
-      'How Public Space, Activities, and Arts Have Transformed in the Pandemic Era',
+      'Ruang Publik, Aktivisme, dan Kegiatan Kesenian Warga Kota Semasa Pandemi',
     organizers: [
       {
         name: 'KotaKita',
@@ -68,11 +68,10 @@ export const panels = [
     link: 'https://www.youtube.com/watch?v=RROcMDUrCIM',
     code: 'RROcMDUrCIM',
     body:
-      "Physical distancing and social restrictions during the pandemic era has undoubtedly affected how we interact with one another. Spaces for self-expression and creativity — which thrived in streets, public markets, coffee shops, museums, events, and various other places — have adapted into virtual forms. This 'new normal' has shifted aspirations, expression, and the collective spirit to be rebuilt on a completely different platform. Creative and art initiatives which are an important part of everyday life have transformed into online concerts, webinars, and various online events. This session discussed how citizens are transforming their acts of expression and methods of communicating their aspirations in diverse forms, individually or collectively, during this pandemic.",
+      'Pandemi COVID-19 yang mengharuskan kita membuat jarak fisik satu sama lainnya, mempengaruhi bagaimana kita berinteraksi satu sama lain. Sebagai medium ekspresi, ruang untuk mengekspresikan diri dan berkegiatan kesenian yang sebelumnya berupa jalan, pasar, kedai kopi, museum, acara, dan berbagai tempat lainnya, berubah bentuk menjadi maya. ‘Normal yang baru’ menuntut aspirasi, ekspresi, bahkan semangat kolektivitas dibangun bersama-bersama dengan platform yang sama sekali berbeda. Kegiatan-kegiatan kesenian dan inisiatif kreatif yang biasanya menjadi bagian penting dalam keseharian, kini terganti dengan konser daring, webinar, serta berbagai forum di internet. Sesi ini mendiskusikan tentang kegiatan mengekspresikan diri dan menyampaikan aspirasi dalam berbagai bentuk yang dilakukan warga kota, baik secara individual maupun kolektif, dalam kaitannya dengan situasi pandemi, serta sejauh mana dampaknya bagi warga.',
   },
   {
-    title:
-      'Urban Kampung in the Time of a Pandemic: Challenges and Community-based Adaptive Spatial Solutions',
+    title: 'Kampung Kota di Masa Pandemi: Tantangan dan Solusi Adaptasi',
     organizers: [
       {
         name: 'KotaKita',
@@ -88,11 +87,11 @@ export const panels = [
     link: 'https://www.youtube.com/watch?v=vhqHizTtEb4&t=3s',
     code: 'vhqHizTtEb4',
     body:
-      'Urban kampungs are known for its high density which makes health protocol — especially physical distancing — difficult to enact. This condition puts residents at a higher risk in the spread of COVID-19. Spatial challenges such as limited availability of clean water and sanitation facilities, put them in a more vulnerable position. This challenging condition demands us to find practical solutions from all key stakeholders. In this discussion, we elaborated on the actual challenges faced by citizens living in dense urban settings like Kampung and rethink together the vision of a more adaptive and resilient neighborhood during this time and beyond.',
+      'Kampung Kota yang identik dengan karakter permukiman yang padat membuat kriteria physical distancing yang sesuai dengan protokol kesehatan sulit dipenuhi. Kondisi ini menempatkan warga kampung kota dalam risiko tinggi dalam penyebaran pandemi COVID-19. Permasalahan spasial lainnya yang pada kenyataannya masih dimiliki permukiman kampung kota, seperti keterbatasan ketersediaan air bersih dan fasilitas sanitasi, memposisikan warga dalam situasi yang semakin rentan. Karakter spasial yang tidak mendukung protokol kesehatan secara ideal di kampung kota menuntut kita semua mencari solusi-solusi untuk dapat mengurangi risiko penularan. Diskusi ini tidak hanya mengelaborasi tantangan aktual yang dihadapi kampung-kampung kota saat ini serta mencari solusinya, tetapi juga bersama-sama membayangkan penataan kampung kota yang lebih adaptif di masa mendatang.',
   },
   {
     title:
-      'Conversations with Rame-Rame Jakarta: The Informal Sector, Online Platforms, and Collaborations towards Urban Activism',
+      'Ngobrol Bareng Rame-Rame Jakarta: Sektor Informal, Platform Daring, dan Usaha Kolaboratif dalam Mendukung Aktivisme Perkotaan',
     organizers: [
       {
         name: 'KotaKita',
@@ -108,11 +107,11 @@ export const panels = [
     link: 'https://www.youtube.com/watch?v=hOYYNp5yPhs&t=4573s',
     code: 'hOYYNp5yPhs',
     body:
-      'In this session, we unpacked the process behind KOTANATOMI, a collaborative initiative between The USF and Rame Rame Jakarta through the production of an educational video series about urban informality. Informality remains a topic that is rarely discussed in urban activism. Furthermore, using video as a medium for discussion may offer a lot of potential for social campaigns. In this session, we explored the process behind the initiative, the lessons learned, as well as the next steps necessary to spark similar collaborations with more organizations in the future.',
+      'Sesi ini mendiskusikan KOTANATOMI, inisiatif kolaboratif Urban Social Forum dan Rame-Rame Jakarta berbentuk seri video yang membahas sektor informal. Sektor informal sebagai sebuah topik dalam aktivisme perkotaan saat ini cenderung masih jarang dibahas, selain itu, video sebagai medium diskusi merupakan metode yang baru dan menarik untuk dikembangkan. Dalam sesi ini, pembicara dan peserta secara kasual saling berdiskusi mulai dari perumusan ide, proses penelitian, hingga mengolahnya menjadi konten video, serta lebih jauh mendiskusikan dampak dan memantik kolaborasi-kolaborasi serupa dengan lebih banyak pihak di masa mendatang.',
   },
   {
     title:
-      'Pandemic Stories by People with Disabilities: Ensuring Inclusivity Amidst Easing Social Restrictions',
+      'Perspektif Penyandang Disabilitas Semasa Pandemi: Memastikan Inklusivitas di Tengah Kembalinya Aktivitas Publik',
     organizers: [
       {
         name: 'KotaKita',
@@ -124,7 +123,7 @@ export const panels = [
     link: 'https://www.youtube.com/watch?v=12jUUy5Joqo',
     code: '12jUUy5Joqo',
     body:
-      'People with disabilities have been among the most vulnerable groups during the COVID-19 pandemic as physical distancing policies have further limited their mobility. Furthermore, they are faced with limited access to secured jobs and economic opportunities, limited information, and health equipment during this health crisis. Lately, the focus has resided on the government and citizens efforts to adapt to this unprecedented situation, with some public activities restarting with mandatory health protocols. The forum discussed the stories and challenges faced by people with disabilities during the pandemic as well as potential solutions on how we can ensure inclusivity during and after the pandemic.',
+      'Kebijakan untuk menjaga jarak fisik dan menghindari aktivitas di luar rumah guna mengurangi laju penyebaran COVID-19 dua bulan terakhir membuat penyandang disabilitas menjadi salah satu kelompok warga kota yang kehidupannya paling terdampak. Selain keterbatasan akses terhadap pekerjaan maupun kesempatan ekonomi yang kini hilang, keterbatasan informasi dan perlengkapan kesehatan di situasi krisis kesehatan publik ini, memposisikan mereka menjadi sangat rentan. Perhatian pemerintah dan warga mulai bergeser pada persiapan adaptasi untuk kehidupan bermasyarakat. Berbagai kegiatan dikondisikan untuk kembali dilakukan, dengan berbagai protokol kesehatan penunjang. Diskusi ini membahas berbagai tantangan penyandang disabilitas dan bagaimana kita dapat memastikan inklusivitas di saat dan setelah masa pandemi berakhir.',
   },
   {
     title: 'Bagaimana Sektor Informal Bertahan di Masa Pandemi?',
@@ -143,11 +142,10 @@ export const panels = [
     link: 'https://www.youtube.com/watch?v=XE2XCvNpmAc&t=1199s',
     code: 'XE2XCvNpmAc',
     body:
-      'Since Indonesia reported its first confirmed COVID-19 case in March 2020, various policies were enacted by the government to regulate economic activity. The informal sector has been one of the vulnerable groups most affected by the pandemic. In order to adapt and survive, these vendors have turned to their own resourcefulness and tactics. This discussion unpacked how the informal sector in Indonesia has responded to social distancing policies as well as the sector’s important contribution to the resilience of a city during the pandemic. Beyond Jakarta, the session also looked at informal sectors in other parts of the world, such as in Bangladesh.',
+      'Sejak kasus pertama COVID-19 diumumkan di bulan Maret 2020, berbagai kebijakan telah dibuat oleh pemerintah untuk meregulasi aktivitas ekonomi. Sektor informal sebagai bagian dari sektor yang terdampak mau tak mau meresponnya dengan taktik-taktik yang berangkat dari karakter mereka sebagai bagian dari informalitas yang selama ini berhasil mendukung eksistensi mereka di kota. Diskusi ini bermaksud mengeksplorasi bagaimana sektor informal sebagai bagian penting dalam aktivitas kota bertahan semasa pandemi. Tidak hanya di Jakarta, sektor informal merupakan fenomena yang ditemukan di banyak kota di berbagai belahan dunia. Sesi ini juga melihat bagaimana pandemi yang serentak dialami direspon oleh sektor informal di kota-kota lainnya.',
   },
   {
-    title:
-      'Slice-of-Life Stories and the Media: How the Informal Sector Contribute to Building the Narrative of a City',
+    title: 'Cerita Sektor Informal dalam Membangun Narasi Kota',
     organizers: [
       {
         name: 'KotaKita',
@@ -163,6 +161,6 @@ export const panels = [
     link: 'https://www.youtube.com/watch?v=Uwg2wg1WsgQ',
     code: 'Uwg2wg1WsgQ',
     body:
-      'This discussion explored the role of media and story-telling, especially in the digital form, in showcasing the experiences and aspirations of the informal sector, which is rarely discussed in mainstream media and public conversations. With figures from the "Kerah Biru" segment by Asumsi, this session provided a space for informal workers to share their narrative with their own agency. The forum also unpacked  how the media and community initiatives could utilize channels such as a digital platform to support the discourse, and how storytelling contributes towards the bigger endeavor of building more democratic cities.',
+      'Diskusi ini mengeksplorasi peran media dan cerita, terutama di era digital, dalam mengangkat cerita sektor informal yang saat ini justru dianggap sebagai entitas yang “asing” dari media dan penceritaan arus utama. Mengundang figur-figur dalam segmen Kerah Biru oleh Asumsi, sesi membuka diskusi tentang apakah pengalaman dan narasi sektor informal versi mereka sendiri, serta bagaimana media dan komunitas menggunakan kanal digital untuk mendukung narasi tersebut dalam rangka mendukung kota yang lebih demokratis.',
   },
 ]
