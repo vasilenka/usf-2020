@@ -16,7 +16,11 @@ const Panel = ({ lang, panel, children, className, ...restProps }) => {
       </button>
       <div className={styles.content}>
         <header className={styles.header}>
-          <Text as="h2" heading2 className={styles.title}>
+          <Text
+            as="h2"
+            heading2
+            className={styles.title}
+            onClick={() => setShow(!show)}>
             {panel.title}
           </Text>
           {show && (

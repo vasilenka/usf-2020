@@ -29,14 +29,14 @@ const HomePage = ({ className, ...restProps }) => {
   return (
     <Default>
       <Navbar />
-      {!viewed && display && (
+      {/* {!viewed && display && (
         <Popup
           setDisplay={setDisplay}
           viewed={viewed}
           display={display}
           setViewed={setViewed}
         />
-      )}
+      )} */}
       <Header setViewed={setViewed} setDisplay={setDisplay} />
       <span ref={ref}></span>
       <About />
