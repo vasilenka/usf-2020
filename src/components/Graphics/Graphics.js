@@ -17,28 +17,28 @@ const Graphics = ({ children, className, ...restProps }) => {
   return (
     <Container as="section" bleed className={cx(styles.root)} {...restProps}>
       <div className={styles.imageWrapper}>
-        <Satu className={styles.image} />
+        <Lima className={styles.image} />
       </div>
       <div className={styles.imageWrapper}>
         <Dua className={styles.image} />
       </div>
       <div className={styles.imageWrapper}>
-        <Tiga className={styles.image} />
+        <Enam className={styles.image} />
+      </div>
+      <div className={styles.imageWrapper}>
+        <Delapan className={styles.image} />
+      </div>
+      <div className={styles.imageWrapper}>
+        <Satu className={styles.image} />
       </div>
       <div className={styles.imageWrapper}>
         <Empat className={styles.image} />
       </div>
       <div className={styles.imageWrapper}>
-        <Lima className={styles.image} />
-      </div>
-      <div className={styles.imageWrapper}>
-        <Enam className={styles.image} />
+        <Tiga className={styles.image} />
       </div>
       <div className={styles.imageWrapper}>
         <Tujuh className={styles.image} />
-      </div>
-      <div className={styles.imageWrapper}>
-        <Delapan className={styles.image} />
       </div>
     </Container>
   )
