@@ -12,12 +12,13 @@ import Text from '../Text/Text'
 
 import Container from './../../layouts/Container/Container'
 import { useLockBodyScroll } from '../../hooks/useLockBodyScroll'
+import Link from '../Link/Link'
 
 const NavbarMenu = ({ to, children, ...restProps }) => {
   return (
-    <a href={to} className={styles.menu} {...restProps}>
+    <Link to={to} className={styles.menu} {...restProps}>
       <Text heading5>{children}</Text>
-    </a>
+    </Link>
   )
 }
 
@@ -34,23 +35,20 @@ const Modal = ({ overlay, setOverlay, closeOverlay }) => {
         </div>
       </div>
       <div className={styles.menus}>
-        <NavbarMenu to="#Header" onClick={closeOverlay}>
+        <NavbarMenu to="/#Header" onClick={closeOverlay}>
           Home
         </NavbarMenu>
-        <NavbarMenu to="#About" onClick={closeOverlay}>
+        <NavbarMenu to="/#About" onClick={closeOverlay}>
           About
         </NavbarMenu>
-        <NavbarMenu to="#Location" onClick={closeOverlay}>
-          Location
-        </NavbarMenu>
-        <NavbarMenu to="#Archive" onClick={closeOverlay}>
+        <NavbarMenu to="/#Archive" onClick={closeOverlay}>
           Archive
         </NavbarMenu>
-        <NavbarMenu to="#Partners" onClick={closeOverlay}>
+        <NavbarMenu to="/#Partners" onClick={closeOverlay}>
           {/* Organizers &amp; Partners */}
           Organizers
         </NavbarMenu>
-        <NavbarMenu to="#Contact" onClick={closeOverlay}>
+        <NavbarMenu to="/#Contact" onClick={closeOverlay}>
           Contact Us
         </NavbarMenu>
       </div>
@@ -92,23 +90,23 @@ const Navbar = ({}) => {
       as="header"
       className={classnames(styles.root)}>
       <Container as="nav" className={classnames(styles.container)}>
-        <NavbarMenu to="#Header">
+        <NavbarMenu to="/#Header">
           <div className={styles.logoDesktop}>
             <LogoSmall title="The 7th Urban Social Forum logo" />
           </div>
         </NavbarMenu>
         <div>
-          <NavbarMenu to="#About">About</NavbarMenu>
-          <NavbarMenu to="#Location">Location</NavbarMenu>
-          <NavbarMenu to="#Archive">Archive</NavbarMenu>
+          <NavbarMenu to="/#About">About</NavbarMenu>
+          {/* <NavbarMenu to="/#Location">Location</NavbarMenu> */}
+          <NavbarMenu to="/#Archive">Archive</NavbarMenu>
           {/* <NavbarMenu to="#Partners">Organizers &amp; Partners</NavbarMenu> */}
-          <NavbarMenu to="#Partners">Organizers</NavbarMenu>
-          <NavbarMenu to="#Contact">Contact Us</NavbarMenu>
+          <NavbarMenu to="/#Partners">Organizers</NavbarMenu>
+          <NavbarMenu to="/#Contact">Contact Us</NavbarMenu>
         </div>
       </Container>
       <nav className={classnames(styles.smallerContainer)}>
         <Container as="nav" className={styles.menuSmaller}>
-          <a href="#Header" className={styles.logoMobile}>
+          <a href="/#Header" className={styles.logoMobile}>
             <LogoSmall />
           </a>
           <Bar onClick={openOverlay} />

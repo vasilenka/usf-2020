@@ -9,10 +9,11 @@ import Text from '../Text/Text'
 import Button from '../Button/Button'
 
 import Container from './../../layouts/Container/Container'
+import Link from './../Link/Link'
 
 const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
   return (
-    <Container as="section" id="header">
+    <Container as="section" id="Header">
       <Container as="section" bleed className={styles.headerLogo}>
         <Logo
           className={classnames(styles.logo)}
@@ -44,37 +45,28 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
             {/* <Text className={classnames(styles.description)} normal as="p">
               We invite you to be a part of the movement.
             </Text> */}
-            <a
-              href="http://bit.ly/usf7jakarta"
-              target="_blank"
+            <Link
+              to="/online#header"
               style={{
                 textDecoration: 'none',
                 marginBottom: 12,
                 display: 'block',
-              }}
-              rel="noopener noreferrer">
+              }}>
               <Button primary large className={styles.cta}>
-                Join as a Participant
+                USF Online
               </Button>
-            </a>
-            {/* <a
-              href="http://bit.ly/usf7volunteer"
-              target="_blank"
-              style={{ textDecoration: 'none' }}
-              rel="noopener noreferrer">
-              <Button primary large className={styles.cta}>
-                Join as a Volunteer
+            </Link>
+            <Link
+              to="/sambang-kota#header"
+              style={{
+                textDecoration: 'none',
+                marginBottom: 12,
+                display: 'block',
+              }}>
+              <Button default large className={styles.cta}>
+                Sambang Kota
               </Button>
-            </a> */}
-            <Button
-              default
-              large
-              onClick={() => {
-                setDisplay(true), setViewed(false)
-              }}
-              className={styles.cta}>
-              Postponement Info
-            </Button>
+            </Link>
           </div>
         </div>
       </Container>

@@ -48,15 +48,15 @@
     max-height: 64px;
   }
   @include screen(tablet) {
-    max-height: 112px;
+    max-height: 88px;
   }
   @include screen(tabletLandscape) {
-    max-height: 112px;
+    max-height: 88px;
   }
   @include screen(desktop) {
-    max-height: 112px;
+    max-height: 88px;
   }
   @include screen(desktopWide) {
-    max-height: 112px;
+    max-height: 88px;
   }
 }

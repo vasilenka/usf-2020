@@ -4,7 +4,24 @@
   @include grid-row();
   align-items: center;
   justify-content: center;
-  margin-bottom: $space-ml;
+  @include screen(smallPhone) {
+    margin-bottom: 0;
+  }
+  @include screen(phone) {
+    margin-bottom: 0;
+  }
+  @include screen(tablet) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(desktop) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: $space-ml;
+  }
 }
 
 .logoContainer {
@@ -13,50 +30,51 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin: $space-inline-l;
+    margin-right: $space-l;
+  }
+
+  &:nth-child(even) {
+    @include screen(smallPhone) {
+      margin-right: 0px;
+    }
+    @include screen(phone) {
+      margin-right: 0px;
+    }
+    @include screen(tablet) {
+      margin-right: $space-l;
+    }
+    @include screen(tabletLandscape) {
+      margin-right: $space-l;
+    }
+    @include screen(desktop) {
+      margin-right: $space-l;
+    }
+    @include screen(desktopWide) {
+      margin-right: $space-l;
+    }
   }
 }
 
 .logo {
   max-width: 100%;
-  @include screen(smallPhone) {
-    margin-bottom: $space-m;
-  }
-  @include screen(phone) {
-    margin-bottom: $space-m;
-  }
-  @include screen(tablet) {
-    margin-bottom: $space-m;
-  }
-  @include screen(tabletLandscape) {
-    margin-bottom: $space-m;
-  }
-  @include screen(desktop) {
-    margin-bottom: 0;
-  }
-  @include screen(desktopWide) {
-    margin-bottom: 0;
-  }
-}
 
-.habitat {
   @include screen(smallPhone) {
-    max-height: 52px;
+    margin-bottom: $space-m;
   }
   @include screen(phone) {
-    max-height: 52px;
+    margin-bottom: $space-m;
   }
   @include screen(tablet) {
-    max-height: 80px;
+    margin-bottom: $space-m;
   }
   @include screen(tabletLandscape) {
-    max-height: 80px;
+    margin-bottom: $space-m;
   }
   @include screen(desktop) {
-    max-height: 80px;
+    margin-bottom: 0;
   }
   @include screen(desktopWide) {
-    max-height: 80px;
+    margin-bottom: 0;
   }
 }
 
@@ -81,44 +99,65 @@
   }
 }
 
-.kopernik {
+.asumsi {
   @include screen(smallPhone) {
-    max-height: 24px;
+    max-height: 56px;
   }
   @include screen(phone) {
-    max-height: 24px;
+    max-height: 56px;
   }
   @include screen(tablet) {
-    max-height: 40px;
+    max-height: 80px;
   }
   @include screen(tabletLandscape) {
-    max-height: 40px;
+    max-height: 80px;
   }
   @include screen(desktop) {
-    max-height: 40px;
+    max-height: 80px;
   }
   @include screen(desktopWide) {
-    max-height: 40px;
+    max-height: 80px;
   }
 }
 
-.bareng {
+.rame {
   @include screen(smallPhone) {
-    max-height: 36px;
+    max-height: 64px;
   }
   @include screen(phone) {
-    max-height: 36px;
+    max-height: 64px;
   }
   @include screen(tablet) {
-    max-height: 52px;
+    max-height: 100px;
   }
   @include screen(tabletLandscape) {
-    max-height: 52px;
+    max-height: 100px;
   }
   @include screen(desktop) {
-    max-height: 52px;
+    max-height: 100px;
   }
   @include screen(desktopWide) {
+    max-height: 100px;
+  }
+}
+
+.iap {
+  @include screen(smallPhone) {
     max-height: 52px;
+  }
+  @include screen(phone) {
+    max-height: 52px;
+  }
+  @include screen(tablet) {
+    max-height: 80px;
+  }
+  @include screen(tabletLandscape) {
+    max-height: 80px;
+  }
+  @include screen(desktop) {
+    max-height: 80px;
+  }
+  @include screen(desktopWide) {
+    max-height: 80px;
   }
 }

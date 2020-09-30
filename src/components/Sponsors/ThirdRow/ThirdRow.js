@@ -2,10 +2,10 @@ import styles from './ThirdRow.module.scss'
 import React from 'react'
 import cx from 'classnames'
 
-import habitat from './habitat.jpg'
+import asumsi from './asumsi.png'
 import itdp from './itdp.jpg'
-import kopernik from './kopernik.png'
-import bareng from './ngebikin-bareng.png'
+import rame from './rame-jakarta.jpg'
+import iap from './iap-jawatengah.png'
 
 export const LogoContainer = ({ src, alt, name }) => {
   return (
@@ -18,14 +18,10 @@ export const LogoContainer = ({ src, alt, name }) => {
 const ThirdRow = ({ className, ...restProps }) => {
   return (
     <div className={styles.root}>
-      <LogoContainer
-        src={habitat}
-        name="habitat"
-        alt="Habitat for humanity logo"
-      />
       <LogoContainer src={itdp} name="itdp" alt="ITDP logo" />
-      <LogoContainer src={kopernik} name="kopernik" alt="Kopernik logo" />
-      <LogoContainer src={bareng} name="bareng" alt="Ngebikin Bareng logo" />
+      <LogoContainer src={asumsi} name="asumsi" alt="Asumsi logo" />
+      <LogoContainer src={rame} name="rame" alt="Rame-Rame Jakarta logo" />
+      <LogoContainer src={iap} name="iap" alt="IAP Jawa Tengah logo" />
     </div>
   )
 }

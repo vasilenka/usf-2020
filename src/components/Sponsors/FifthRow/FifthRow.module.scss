@@ -14,6 +14,27 @@
   &:not(:last-child) {
     margin-right: $space-l;
   }
+
+  &:nth-child(even) {
+    @include screen(smallPhone) {
+      margin-right: 0px;
+    }
+    @include screen(phone) {
+      margin-right: 0px;
+    }
+    @include screen(tablet) {
+      margin-right: $space-l;
+    }
+    @include screen(tabletLandscape) {
+      margin-right: $space-l;
+    }
+    @include screen(desktop) {
+      margin-right: $space-l;
+    }
+    @include screen(desktopWide) {
+      margin-right: $space-l;
+    }
+  }
 }
 
 .logo {
@@ -38,45 +59,45 @@
   }
 }
 
-.gula {
+.nekropolis {
   @include screen(smallPhone) {
-    max-height: 52px;
+    max-height: 32px;
   }
   @include screen(phone) {
-    max-height: 52px;
+    max-height: 32px;
   }
   @include screen(tablet) {
-    max-height: 80px;
+    max-height: 48px;
   }
   @include screen(tabletLandscape) {
-    max-height: 80px;
+    max-height: 48px;
   }
   @include screen(desktop) {
-    max-height: 80px;
+    max-height: 48px;
   }
   @include screen(desktopWide) {
-    max-height: 80px;
+    max-height: 48px;
   }
 }
 
-.kampung {
+.kbj {
   @include screen(smallPhone) {
-    max-height: 40px;
+    max-height: 52px;
   }
   @include screen(phone) {
-    max-height: 40px;
+    max-height: 52px;
   }
   @include screen(tablet) {
-    max-height: 64px;
+    max-height: 76px;
   }
   @include screen(tabletLandscape) {
-    max-height: 64px;
+    max-height: 76px;
   }
   @include screen(desktop) {
-    max-height: 64px;
+    max-height: 76px;
   }
   @include screen(desktopWide) {
-    max-height: 64px;
+    max-height: 76px;
   }
 }
 

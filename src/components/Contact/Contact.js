@@ -27,7 +27,7 @@ const Contact = ({ className }) => {
         <div className={styles.row}>
           <div className={styles.email}>
             <Text className={styles.label} heading5>
-              For more information, please email us at:
+              For more information, please email us at:{' '}
             </Text>
             <a
               className={classnames(styles.link)}

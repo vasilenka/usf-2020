@@ -16,7 +16,12 @@ const PageHeader = ({
   ...restProps
 }) => {
   return (
-    <Container bleed as="section" className={cx(styles.root)} {...restProps}>
+    <Container
+      bleed
+      as="section"
+      id="header"
+      className={cx(styles.root)}
+      {...restProps}>
       <Container as="header" className={styles.langWrapper}>
         <button
           className={cx({

@@ -41,7 +41,7 @@ const HomePage = ({ className, ...restProps }) => {
       <span ref={ref}></span>
       <About />
       {/* <Join /> */}
-      <Location inView={inView} />
+      {/* <Location inView={inView} /> */}
       <Archive inView={inView} />
       <div
         style={{

@@ -38,7 +38,7 @@ const OnlinePage = () => {
           backgroundPosition: 'center center',
           paddingBottom: 0,
         }}>
-        <Sponsors inView={inView} />
+        <Sponsors online inView={inView} />
         <Contact />
       </div>
     </Default>

@@ -15,7 +15,7 @@
   font-size: 16px;
   font-weight: $semibold;
   color: $dark-alpha-60;
-  padding: 16px 24px;
+  padding: 16px 0px;
   font-variant-numeric: tabular-nums;
 
   &.active {
@@ -25,8 +25,9 @@
 }
 
 .langSeparator {
-  padding-left: $space-s;
-  padding-right: $space-s;
+  padding-left: $space-m;
+  padding-right: $space-m;
+  color: $dark-alpha-40;
 }
 
 .logoContainer {

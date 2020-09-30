@@ -17,27 +17,22 @@ import FourthRow from './FourthRow/FourthRow'
 import FifthRow from './FifthRow/FifthRow'
 import MediaPartners from './MediaPartners/MediaPartners'
 
-const Sponsors = ({ inView, className }) => {
+const Sponsors = ({ online, sambang, inView, className }) => {
   return (
     <Container id="Partners" className={styles.root}>
       <Container narrow className={styles.card}>
-        <SectionHeader bleed center icon={<FaStar />} title="Organizer" />
+        <SectionHeader
+          bleed
+          center
+          title={online ? 'Organizer & Partners' : 'Organizer'}
+        />
         {inView && <FirstRow />}
-        {/* <SecondRow />
-        <ThirdRow />
-        <FourthRow />
-        <FifthRow /> */}
-        {/* <div className={styles.row}>
-          <Text
-            heading4
-            style={{
-              textAlign: 'center',
-              width: '100%',
-            }}>
-            Media Partners
-          </Text>
-        </div>
-        <MediaPartners /> */}
+        {online && inView && (
+          <>
+            <ThirdRow />
+            <FifthRow />
+          </>
+        )}
       </Container>
     </Container>
   )
