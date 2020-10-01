@@ -48,7 +48,7 @@ const PageHeader = ({
           title="The 7th Urban Social Forum"
         />
       </Container>
-      <Container as="footer" className={styles.footer}>
+      <Container bleed as="footer" className={styles.footer}>
         <Text align="center" heading2 as="h1" className={styles.title}>
           {title}
         </Text>

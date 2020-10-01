@@ -39,16 +39,16 @@
     display: none;
   }
   @include screen(tablet) {
-    display: static;
+    display: block;
   }
   @include screen(tabletLandscape) {
-    display: static;
+    display: block;
   }
   @include screen(desktop) {
-    display: static;
+    display: block;
   }
   @include screen(desktopWide) {
-    display: static;
+    display: block;
   }
 }
 
