@@ -139,7 +139,7 @@ const Panel = ({ lang, panel, children, className, ...restProps }) => {
             src={`https://www.youtube.com/embed/${panel.code}`}
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowFullScreen></iframe>
         </section>
       )}
       {show && (

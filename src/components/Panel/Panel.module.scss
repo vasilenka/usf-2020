@@ -169,12 +169,18 @@
   }
 }
 
-.videoWrapper,
-.videWrapperMobile {
+.videoWrapper {
   margin-top: $space-ml;
   overflow: hidden;
   border-radius: 12px;
   width: fit-content;
+}
+
+.videWrapperMobile {
+  margin-top: $space-ml;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 100%;
 }
 
 .paragraph,
