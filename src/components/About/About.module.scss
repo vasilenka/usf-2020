@@ -3,10 +3,10 @@
 .root {
   background: $brand-primary-100;
   @include screen(smallPhone) {
-    padding-bottom: 25ch;
+    padding-bottom: 28ch;
   }
   @include screen(phone) {
-    padding-bottom: 25ch;
+    padding-bottom: 28ch;
   }
   @include screen(tablet) {
     padding-bottom: 45ch;
