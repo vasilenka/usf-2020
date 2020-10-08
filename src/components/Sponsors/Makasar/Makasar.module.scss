@@ -111,7 +111,7 @@
     max-height: 52px;
   }
   @include screen(tablet) {
-    max-height: 80px;
+    max-height: 84px;
   }
   @include screen(tabletLandscape) {
     max-height: 80px;
@@ -142,5 +142,26 @@
   }
   @include screen(desktopWide) {
     max-height: 80px;
+  }
+}
+
+.kbj {
+  @include screen(smallPhone) {
+    max-height: 60px;
+  }
+  @include screen(phone) {
+    max-height: 60px;
+  }
+  @include screen(tablet) {
+    max-height: 100px;
+  }
+  @include screen(tabletLandscape) {
+    max-height: 100px;
+  }
+  @include screen(desktop) {
+    max-height: 100px;
+  }
+  @include screen(desktopWide) {
+    max-height: 100px;
   }
 }

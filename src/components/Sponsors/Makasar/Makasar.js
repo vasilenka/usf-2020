@@ -5,6 +5,7 @@ import cx from 'classnames'
 import himahi from './himahi.png'
 import kotata from './kotata.png'
 import sekolahi from './sekolahi.jpeg'
+import kbj from './kbj.jpg'
 
 export const LogoContainer = ({ src, alt, name }) => {
   return (
@@ -14,7 +15,7 @@ export const LogoContainer = ({ src, alt, name }) => {
   )
 }
 
-export const MakasarOne = ({ className, ...restProps }) => {
+export const MakasarOne = ({ sambang, className, ...restProps }) => {
   return (
     <div className={styles.root}>
       <LogoContainer
@@ -24,6 +25,9 @@ export const MakasarOne = ({ className, ...restProps }) => {
       />
       <LogoContainer src={kotata} name="kotata" alt="Kotata logo" />
       <LogoContainer src={sekolahi} name="sekolahi" alt="Sekolahi logo" />
+      {sambang && (
+        <LogoContainer src={kbj} name="kbj" alt="Kedai Buku Jenny logo" />
+      )}
     </div>
   )
 }

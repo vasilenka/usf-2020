@@ -26,12 +26,12 @@ const Sponsors = ({ online, landing, sambang, inView, className }) => {
       <Container narrow className={styles.card}>
         <SectionHeader bleed center title="Organizer &amp; Partners" />
         {inView && <FirstRow />}
-        {(landing || sambang) && inView && (
+        {(landing || sambang) && (
           <>
             <SurabayaOne />
             <SurabayaTwo />
             <SoloOne />
-            <MakasarOne />
+            <MakasarOne sambang={sambang} />
           </>
         )}
         {(online || landing) && inView && (
