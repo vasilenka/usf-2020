@@ -12,11 +12,17 @@ const Cover = ({ cover, children, className, ...restProps }) => {
         {cover &&
           cover.map((c, index) => {
             return index === 0 ? (
-              <Text as="p" className={styles.paragraph}>
+              <Text
+                key={`cover-text-${index}`}
+                as="p"
+                className={styles.paragraph}>
                 <strong>{c.bold}</strong> {c.text}
               </Text>
             ) : (
-              <Text as="p" className={styles.paragraph}>
+              <Text
+                key={`cover-text-${index}`}
+                as="p"
+                className={styles.paragraph}>
                 {c}
               </Text>
             )

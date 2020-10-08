@@ -5,6 +5,9 @@ import PropTypes from 'prop-types'
 import './Default.module.scss'
 import SEO from './../../utils/seo'
 
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 const Layout = ({ children }) => (
   <main className={styles.root}>
     <SEO />

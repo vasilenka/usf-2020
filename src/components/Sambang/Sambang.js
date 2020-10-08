@@ -1,10 +1,11 @@
-import styles from './Panel.module.scss'
+import styles from './Sambang.module.scss'
 import React, { useState } from 'react'
 import cx from 'classnames'
 import Chevron from './chevronUp'
 import Text from '../Text/Text'
+import SambangSlider from '../SambangSlider/SambangSlider'
 
-const Panel = ({ lang, panel, children, className, ...restProps }) => {
+const Sambang = ({ lang, panel, children, className, ...restProps }) => {
   const [show, setShow] = useState(false)
 
   return (
@@ -62,22 +63,12 @@ const Panel = ({ lang, panel, children, className, ...restProps }) => {
                   {lang === 'en' ? 'Date' : 'Tanggal'}:{' '}
                   <span className={styles.value}>{panel.date}</span>
                 </Text>
-                <Text heading4 as="p" className={styles.item}>
-                  {lang === 'en' ? 'Participants/Viewers' : 'Peserta/Penonton'}:{' '}
-                  <span className={styles.value}>{panel.viewers}</span>
-                </Text>
               </span>
             )}
           </header>
           {show && (
-            <section className={styles.videoWrapper}>
-              <iframe
-                width="560px"
-                height="315px"
-                src={`https://www.youtube.com/embed/${panel.code}`}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen></iframe>
+            <section className={styles.sliderWrapper}>
+              <SambangSlider />
             </section>
           )}
           {show && (
@@ -125,21 +116,11 @@ const Panel = ({ lang, panel, children, className, ...restProps }) => {
             {lang === 'en' ? 'Date' : 'Tanggal'}:{' '}
             <span className={styles.value}>{panel.date}</span>
           </Text>
-          <Text small as="p" className={styles.item}>
-            {lang === 'en' ? 'Participants/Viewers' : 'Peserta/Penonton'}:{' '}
-            <span className={styles.value}>{panel.viewers}</span>
-          </Text>
         </section>
       )}
       {show && (
-        <section className={styles.videWrapperMobile}>
-          <iframe
-            width="100%"
-            height="315px"
-            src={`https://www.youtube.com/embed/${panel.code}`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
+        <section className={styles.sliderWrapperMobile}>
+          <SambangSlider />
         </section>
       )}
       {show && (
@@ -151,4 +132,4 @@ const Panel = ({ lang, panel, children, className, ...restProps }) => {
   )
 }
 
-export default Panel
+export default Sambang

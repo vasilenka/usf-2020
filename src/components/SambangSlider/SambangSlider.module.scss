@@ -1,0 +1,40 @@
+@import 'src/tokens';
+
+.root {
+  width: 100%;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+  @include screen(smallPhone) {
+    padding-bottom: $space-s;
+  }
+  @include screen(phone) {
+    padding-bottom: $space-s;
+  }
+  @include screen(tablet) {
+    padding-bottom: $space-l;
+  }
+  @include screen(tabletLandscape) {
+    padding-bottom: $space-l;
+  }
+  @include screen(desktop) {
+    padding-bottom: $space-l;
+  }
+  @include screen(desktopWide) {
+    padding-bottom: $space-l;
+  }
+}
+.wrapper {
+  // width: 100%;
+}
+
+.container {
+  height: 400px;
+  width: 100%;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}

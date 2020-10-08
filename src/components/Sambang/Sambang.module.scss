@@ -1,0 +1,237 @@
+@import 'src/tokens';
+
+.root {
+  padding-top: $space-ll;
+  padding-bottom: $space-ll;
+  border-bottom: 2px solid $dark-alpha-20;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  @include screen(smallPhone) {
+    flex-direction: row-reverse;
+  }
+  @include screen(phone) {
+    flex-direction: row-reverse;
+  }
+  @include screen(tablet) {
+    flex-direction: row;
+  }
+  @include screen(tabletLandscape) {
+    flex-direction: row;
+  }
+  @include screen(desktop) {
+    flex-direction: row;
+  }
+  @include screen(desktopWide) {
+    flex-direction: row;
+  }
+}
+
+.sliderWrapper,
+.paragraph,
+.details {
+  @include screen(smallPhone) {
+    display: none;
+  }
+  @include screen(phone) {
+    display: none;
+  }
+  @include screen(tablet) {
+    display: block;
+  }
+  @include screen(tabletLandscape) {
+    display: block;
+  }
+  @include screen(desktop) {
+    display: block;
+  }
+  @include screen(desktopWide) {
+    display: block;
+  }
+}
+
+.cta {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  background-color: $brand-tertiary-200;
+  border-radius: 12px;
+  cursor: pointer;
+
+  @include screen(smallPhone) {
+    padding: 8px;
+  }
+  @include screen(phone) {
+    padding: 8px;
+  }
+  @include screen(tablet) {
+    padding: 0;
+  }
+  @include screen(tabletLandscape) {
+    padding: 0;
+  }
+  @include screen(desktop) {
+    padding: 0;
+  }
+  @include screen(desktopWide) {
+    padding: 0;
+  }
+}
+
+.chevron {
+  display: block;
+  color: $light-alpha-100;
+  transform: rotate(180deg);
+  transition: all 0.4s ease-in-out;
+
+  &.rotate {
+    transition: all 0.28s ease-in-out;
+    transform: rotate(0deg);
+  }
+
+  @include screen(smallPhone) {
+    width: 32px;
+    height: 32px;
+  }
+  @include screen(phone) {
+    width: 32px;
+    height: 32px;
+  }
+  @include screen(tablet) {
+    width: 48px;
+    height: 48px;
+  }
+  @include screen(tabletLandscape) {
+    width: 48px;
+    height: 48px;
+  }
+  @include screen(desktop) {
+    width: 48px;
+    height: 48px;
+  }
+  @include screen(desktopWide) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.content {
+  flex: 1;
+  max-width: 100%;
+
+  @include screen(smallPhone) {
+    padding-left: 0;
+    padding-right: $space-m;
+  }
+  @include screen(phone) {
+    padding-left: 0;
+    padding-right: $space-m;
+  }
+  @include screen(tablet) {
+    padding-left: $space-ml;
+    padding-right: 0;
+  }
+  @include screen(tabletLandscape) {
+    padding-left: $space-ml;
+    padding-right: 0;
+  }
+  @include screen(desktop) {
+    padding-left: $space-ml;
+    padding-right: 0;
+  }
+  @include screen(desktopWide) {
+    padding-left: $space-ml;
+    padding-right: 0;
+  }
+}
+
+.title {
+  cursor: pointer;
+  @include screen(smallPhone) {
+    line-height: 32px;
+  }
+  @include screen(phone) {
+    line-height: 32px;
+  }
+  @include screen(tablet) {
+    line-height: 48px;
+  }
+  @include screen(tabletLandscape) {
+    line-height: 48px;
+  }
+  @include screen(desktop) {
+    line-height: 48px;
+  }
+  @include screen(desktopWide) {
+    line-height: 48px;
+  }
+}
+
+.sliderWrapper {
+  margin-top: $space-ml;
+  border-radius: 12px;
+}
+
+.sliderWrapperMobile {
+  margin-top: $space-ml;
+  border-radius: 12px;
+}
+
+.paragraph,
+.paragraphMobile {
+  padding-top: $space-ml;
+  width: 100%;
+  max-width: 80ch;
+}
+
+.url {
+  text-decoration: underline;
+  color: $brand-secondary-200;
+  font-weight: $bold;
+}
+
+.item {
+  padding-top: $space-xs;
+  padding-bottom: $space-xs;
+  color: $dark-alpha-60;
+}
+
+.value {
+  font-weight: $semibold;
+  color: $dark-alpha-80;
+}
+
+.overline {
+}
+
+.detailMobile {
+  padding-top: $space-m;
+}
+
+.detailMobile,
+.sliderWrapperMobile,
+.paragraphMobile {
+  @include screen(smallPhone) {
+    display: static;
+  }
+  @include screen(phone) {
+    display: static;
+  }
+  @include screen(tablet) {
+    display: none;
+  }
+  @include screen(tabletLandscape) {
+    display: none;
+  }
+  @include screen(desktop) {
+    display: none;
+  }
+  @include screen(desktopWide) {
+    display: none;
+  }
+}

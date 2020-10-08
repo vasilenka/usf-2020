@@ -3,8 +3,8 @@ import { useInView } from 'react-intersection-observer'
 
 import Default from '../layouts/Default/Default'
 
-import { cover as coverEn, panels as panelsEn } from '../docs/sambang/en'
-import { cover as coverId, panels as panelsId } from '../docs/sambang/id'
+import { cover as coverEn, cities as panelsEn } from '../docs/sambang/en'
+import { cover as coverId, cities as panelsId } from '../docs/sambang/id'
 
 import Navbar from '../components/Navbar/Navbar'
 import PageHeader from '../components/PageHeader/PageHeader'
@@ -12,6 +12,7 @@ import Graphics from '../components/Graphics/Graphics'
 import Cover from '../components/Cover/Cover'
 import Sponsors from '../components/Sponsors/Sponsors'
 import Contact from '../components/Contact/Contact'
+import SambangList from '../components/SambangList/SambangList'
 // import PanelList from '../components/PanelList/PanelList'
 
 const SambangPage = () => {
@@ -29,6 +30,10 @@ const SambangPage = () => {
       <PageHeader active={active} setActive={setActive} title="Sambang Kota" />
       <Graphics />
       <Cover cover={active === 'en' ? coverEn : coverId} />
+      <SambangList
+        lang={active}
+        panels={active === 'en' ? panelsEn : panelsId}
+      />
       <div
         style={{
           backgroundImage: inView && 'url("/images/poster.png")',
