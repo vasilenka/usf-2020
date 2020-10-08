@@ -51,7 +51,7 @@ const HomePage = ({ className, ...restProps }) => {
           backgroundPosition: 'center center',
           paddingBottom: 0,
         }}>
-        <Sponsors inView={inView} />
+        <Sponsors landing inView={inView} />
         <Contact />
       </div>
     </Default>

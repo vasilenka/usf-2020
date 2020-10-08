@@ -24,7 +24,7 @@ const OnlinePage = () => {
 
   return (
     <Default>
-      <Navbar />
+      <Navbar page />
       <span ref={ref}></span>
       <PageHeader active={active} setActive={setActive} title="Online Panels" />
       <Graphics />

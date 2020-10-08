@@ -1,0 +1,125 @@
+@import 'src/tokens';
+
+.root {
+  @include grid-row();
+  align-items: center;
+  justify-content: center;
+  @include screen(smallPhone) {
+    margin-bottom: 0;
+  }
+  @include screen(phone) {
+    margin-bottom: 0;
+  }
+  @include screen(tablet) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(desktop) {
+    margin-bottom: $space-ml;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: $space-ml;
+  }
+}
+
+.logoContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(even) {
+    @include screen(smallPhone) {
+      margin-right: 0;
+    }
+    @include screen(phone) {
+      margin-right: 0;
+    }
+    @include screen(tablet) {
+      margin-right: $space-l;
+    }
+    @include screen(tabletLandscape) {
+      margin-right: $space-l;
+    }
+    @include screen(desktop) {
+      margin-right: $space-l;
+    }
+    @include screen(desktopWide) {
+      margin-right: $space-l;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: $space-l;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.logo {
+  max-width: 100%;
+
+  @include screen(smallPhone) {
+    margin-bottom: $space-m;
+  }
+  @include screen(phone) {
+    margin-bottom: $space-m;
+  }
+  @include screen(tablet) {
+    margin-bottom: $space-m;
+  }
+  @include screen(tabletLandscape) {
+    margin-bottom: $space-m;
+  }
+  @include screen(desktop) {
+    margin-bottom: 0;
+  }
+  @include screen(desktopWide) {
+    margin-bottom: 0;
+  }
+}
+
+.baku {
+  @include screen(smallPhone) {
+    max-height: 76px;
+  }
+  @include screen(phone) {
+    max-height: 76px;
+  }
+  @include screen(tablet) {
+    max-height: 108px;
+  }
+  @include screen(tabletLandscape) {
+    max-height: 108px;
+  }
+  @include screen(desktop) {
+    max-height: 108px;
+  }
+  @include screen(desktopWide) {
+    max-height: 108px;
+  }
+}
+
+.urdc {
+  @include screen(smallPhone) {
+    max-height: 64px;
+  }
+  @include screen(phone) {
+    max-height: 64px;
+  }
+  @include screen(tablet) {
+    max-height: 84px;
+  }
+  @include screen(tabletLandscape) {
+    max-height: 84px;
+  }
+  @include screen(desktop) {
+    max-height: 84px;
+  }
+  @include screen(desktopWide) {
+    max-height: 84px;
+  }
+}

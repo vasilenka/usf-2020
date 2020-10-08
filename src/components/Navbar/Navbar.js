@@ -22,7 +22,7 @@ const NavbarMenu = ({ to, children, ...restProps }) => {
   )
 }
 
-const Modal = ({ overlay, setOverlay, closeOverlay }) => {
+const Modal = ({ overlay, page, setOverlay, closeOverlay }) => {
   useLockBodyScroll()
 
   return (
@@ -38,6 +38,7 @@ const Modal = ({ overlay, setOverlay, closeOverlay }) => {
         <NavbarMenu to="/#Header" onClick={closeOverlay}>
           Home
         </NavbarMenu>
+
         <NavbarMenu to="/#About" onClick={closeOverlay}>
           About
         </NavbarMenu>
@@ -45,11 +46,16 @@ const Modal = ({ overlay, setOverlay, closeOverlay }) => {
           Archive
         </NavbarMenu>
         <NavbarMenu to="/#Partners" onClick={closeOverlay}>
-          {/* Organizers &amp; Partners */}
           Organizers
         </NavbarMenu>
         <NavbarMenu to="/#Contact" onClick={closeOverlay}>
           Contact Us
+        </NavbarMenu>
+        <NavbarMenu to="/online">
+          7<sup>th</sup> USF Online
+        </NavbarMenu>
+        <NavbarMenu to="/sambang-kota">
+          7<sup>th</sup> USF Sambang Kota
         </NavbarMenu>
       </div>
       <div className={styles.buttonContainer}>
@@ -59,7 +65,7 @@ const Modal = ({ overlay, setOverlay, closeOverlay }) => {
   )
 }
 
-const Navbar = ({}) => {
+const Navbar = ({ page }) => {
   let [overlay, setOverlay] = React.useState(false)
 
   const closeOverlay = () => {
@@ -95,14 +101,26 @@ const Navbar = ({}) => {
             <LogoSmall title="The 7th Urban Social Forum logo" />
           </div>
         </NavbarMenu>
-        <div>
-          <NavbarMenu to="/#About">About</NavbarMenu>
-          {/* <NavbarMenu to="/#Location">Location</NavbarMenu> */}
-          <NavbarMenu to="/#Archive">Archive</NavbarMenu>
-          {/* <NavbarMenu to="#Partners">Organizers &amp; Partners</NavbarMenu> */}
-          <NavbarMenu to="/#Partners">Organizers</NavbarMenu>
-          <NavbarMenu to="/#Contact">Contact Us</NavbarMenu>
-        </div>
+        {!page && (
+          <div>
+            <NavbarMenu to="/#About">About</NavbarMenu>
+            {/* <NavbarMenu to="/#Location">Location</NavbarMenu> */}
+            <NavbarMenu to="/#Archive">Archive</NavbarMenu>
+            {/* <NavbarMenu to="#Partners">Organizers &amp; Partners</NavbarMenu> */}
+            <NavbarMenu to="/#Partners">Organizers</NavbarMenu>
+            <NavbarMenu to="/#Contact">Contact Us</NavbarMenu>
+          </div>
+        )}
+        {page && (
+          <div className={styles.additionalMenu}>
+            <NavbarMenu to="/online">
+              7<sup>th</sup> USF Online
+            </NavbarMenu>
+            <NavbarMenu to="/sambang-kota">
+              7<sup>th</sup> USF Sambang Kota
+            </NavbarMenu>
+          </div>
+        )}
       </Container>
       <nav className={classnames(styles.smallerContainer)}>
         <Container as="nav" className={styles.menuSmaller}>
@@ -113,6 +131,7 @@ const Navbar = ({}) => {
         </Container>
         {overlay && (
           <Modal
+            page={page}
             overlay={overlay}
             setOverlay={setOverlay}
             closeOverlay={closeOverlay}

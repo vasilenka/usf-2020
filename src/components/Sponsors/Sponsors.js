@@ -16,8 +16,11 @@ import ThirdRow from './ThirdRow/ThirdRow'
 import FourthRow from './FourthRow/FourthRow'
 import FifthRow from './FifthRow/FifthRow'
 import MediaPartners from './MediaPartners/MediaPartners'
+import { SurabayaOne, SurabayaTwo } from './Surabaya/Surabaya'
+import { SoloOne } from './Solo/Solo'
+import { MakasarOne } from './Makasar/Makasar'
 
-const Sponsors = ({ online, sambang, inView, className }) => {
+const Sponsors = ({ online, landing, sambang, inView, className }) => {
   return (
     <Container id="Partners" className={styles.root}>
       <Container narrow className={styles.card}>
@@ -27,7 +30,15 @@ const Sponsors = ({ online, sambang, inView, className }) => {
           title={online ? 'Organizer & Partners' : 'Organizer'}
         />
         {inView && <FirstRow />}
-        {online && inView && (
+        {(landing || sambang) && (
+          <>
+            <SurabayaOne />
+            <SurabayaTwo />
+            <SoloOne />
+            <MakasarOne />
+          </>
+        )}
+        {(online || landing) && (
           <>
             <ThirdRow />
             <FifthRow />
