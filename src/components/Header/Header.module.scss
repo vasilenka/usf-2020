@@ -92,24 +92,7 @@
 }
 
 .description {
-  @include screen(smallPhone) {
-    margin: $space-stack-ml;
-  }
-  @include screen(phone) {
-    margin: $space-stack-ml;
-  }
-  @include screen(tablet) {
-    margin: $space-stack-m;
-  }
-  @include screen(tabletLandscape) {
-    margin: $space-stack-m;
-  }
-  @include screen(desktop) {
-    margin: $space-stack-m;
-  }
-  @include screen(desktopWide) {
-    margin: $space-stack-m;
-  }
+  margin-bottom: $space-ml;
 }
 
 .headerLogo {

@@ -17,8 +17,8 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
       <Container as="section" bleed className={styles.headerLogo}>
         <Logo
           className={classnames(styles.logo)}
-          alt="The 7th Urban Social Forum"
-          title="The 7th Urban Social Forum"
+          alt="Urban Social Forum"
+          title="Urban Social Forum"
         />
       </Container>
       <Container as="section" bleed>
@@ -29,18 +29,14 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
             title="Urban social forum (USF) 2020 cover"
           />
           <div className={classnames(styles.text)}>
-            <Text className={classnames(styles.subtitle)} heading2 as="h2">
-              {/* Jakarta, 18 April 2020 */}
-              Jakarta, 2020
-            </Text>
             <Text className={classnames(styles.description)} normal as="p">
-              The Urban Social Forum is an annual event that provides an open
-              and inclusive space for exchanging of knowledge, debating ideas,
-              and networking between civil society organisations, activists,
-              academics, and students working on pressing urban issues.
-              Ultimately, the Forum is a truly public and democratic space for
-              people to put forward alternative ideas and imagine ‘Another City
-              is Possible!’
+              Since 2013, the Urban Social Forum has been an annual event that
+              provides an open and inclusive space for exchanging of knowledge,
+              debating ideas, and networking between civil society
+              organisations, activists, academics, and students working on
+              pressing urban issues. Ultimately, the Forum is a truly public and
+              democratic space for people to put forward alternative ideas and
+              imagine ‘Another City is Possible!’
             </Text>
             {/* <Text className={classnames(styles.description)} normal as="p">
               We invite you to be a part of the movement.
@@ -53,7 +49,9 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
                 display: 'block',
               }}>
               <Button primary large className={styles.cta}>
-                USF Online
+                <span>
+                  7<sup>th</sup> Urban Social Forum Online
+                </span>
               </Button>
             </Link>
             <Link
@@ -64,7 +62,9 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
                 display: 'block',
               }}>
               <Button default large className={styles.cta}>
-                Sambang Kota
+                <span>
+                  7<sup>th</sup> Urban Social Forum “Sambang Kota”
+                </span>
               </Button>
             </Link>
           </div>

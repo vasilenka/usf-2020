@@ -16,18 +16,11 @@ const About = ({ className, ...restProps }) => {
           <br />
           “Another City is Possible!”
         </Text>
-        {/* <Button
-          handleClick="https://bit.ly/informasiusf6"
-          className={styles.cta}
-          primary
-          large>
-          View Schedule and Information Booklet
-        </Button> */}
         <Text className={styles.paragraph} medium as="p">
-          Greetings from the Organizing Committee of the 7<sup>th</sup> Urban
-          Social Forum! Year after year the Urban Social Forum grows, in doing
-          so it expands the conversation about better cities to include more and
-          more people, communities, and ideas. The Forum believes in the need to
+          Greetings from the Secretariat of the 7<sup>th</sup> Urban Social
+          Forum! Year after year the Urban Social Forum grows, in doing so it
+          expands the conversation about better cities to include more and more
+          people, communities, and ideas. The Forum believes in the need to
           urgently advocate for and promote a more socially just, sustainable
           and democratic city, and that active citizen participation is needed
           to achieve these goals. We would like to invite you and your

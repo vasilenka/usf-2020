@@ -6,19 +6,19 @@
     padding-bottom: 28ch;
   }
   @include screen(phone) {
-    padding-bottom: 28ch;
+    padding-bottom: 36ch;
   }
   @include screen(tablet) {
-    padding-bottom: 45ch;
+    padding-bottom: 36ch;
   }
   @include screen(tabletLandscape) {
-    padding-bottom: 45ch;
+    padding-bottom: 48ch;
   }
   @include screen(desktop) {
-    padding-bottom: 20ch;
+    padding-bottom: 28ch;
   }
   @include screen(desktopWide) {
-    padding-bottom: 20ch;
+    padding-bottom: 28ch;
   }
 }
 
