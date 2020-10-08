@@ -3,6 +3,31 @@ import React from 'react'
 import cx from 'classnames'
 import Slider from 'react-slick'
 
+import ChevronLeft from '../icons/ChevronLeft'
+import ChevronRight from '../icons/ChevronRight'
+
+const PrevArrow = ({ className, style, onClick }) => {
+  return (
+    <button
+      style={{ ...style }}
+      className={cx(styles.prevArrow)}
+      onClick={onClick}>
+      <ChevronLeft className={cx(styles.arrowIcon, styles.prevArrowIcon)} />
+    </button>
+  )
+}
+
+const NextArrow = ({ className, style, onClick }) => {
+  return (
+    <button
+      style={{ ...style }}
+      className={cx(styles.nextArrow)}
+      onClick={onClick}>
+      <ChevronRight className={cx(styles.arrowIcon, styles.nextArrowIcon)} />
+    </button>
+  )
+}
+
 const SambangSlider = ({ children, className, ...restProps }) => {
   const settings = {
     lazyLoad: true,
@@ -10,8 +35,10 @@ const SambangSlider = ({ children, className, ...restProps }) => {
     infinite: true,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
+    speed: 2500,
     autoplaySpeed: 2000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   }
 
   return (

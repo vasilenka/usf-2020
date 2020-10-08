@@ -4,7 +4,6 @@
   width: 100%;
   position: relative;
   border-radius: 6px;
-  overflow: hidden;
 
   @include screen(smallPhone) {
     padding-bottom: $space-s;
@@ -32,9 +31,49 @@
 .container {
   height: 400px;
   width: 100%;
-  background-color: rebeccapurple;
+  background-color: $brand-secondary-200;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
+}
+
+.prevArrow,
+.nextArrow {
+  z-index: $layer-l;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  outline: none;
+  border-radius: $radius-rounded;
+  padding: 12px;
+  background-color: $light-alpha-100;
+  box-shadow: 0px 4px 8px -2px $dark-alpha-30;
+  color: $brand-tertiary-200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .arrowIcon {
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    &.prevArrowIcon {
+      transform: translateX(-1px);
+    }
+
+    &.nextArrowIcon {
+      transform: translateX(1px);
+    }
+  }
+}
+
+.nextArrow {
+  right: -20px;
+}
+
+.prevArrow {
+  left: -20px;
 }
