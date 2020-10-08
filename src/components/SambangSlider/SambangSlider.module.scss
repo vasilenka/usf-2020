@@ -29,12 +29,42 @@
 }
 
 .container {
-  height: 400px;
-  width: 100%;
-  background-color: $brand-secondary-200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // position: relative;
+  // width: 100%;
+  // background-color: $brand-secondary-200;
+  // display: block;
+  // overflow: hidden;
+
+  // @include screen(smallPhone) {
+  //   height: 192px;
+  // }
+  // @include screen(phone) {
+  //   height: 192px;
+  // }
+  // @include screen(tablet) {
+  //   height: 320px;
+  // }
+  // @include screen(tabletLandscape) {
+  //   height: 320px;
+  // }
+  // @include screen(desktop) {
+  //   height: 600px;
+  // }
+  // @include screen(desktopWide) {
+  //   height: 600px;
+  // }
+}
+
+.photo {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // width: 100%;
+  // height: 100%;
+  // object-fit: contain;
+  // object-position: center;
 }
 
 .prevArrow,

@@ -28,15 +28,15 @@ const NextArrow = ({ className, style, onClick }) => {
   )
 }
 
-const SambangSlider = ({ children, className, ...restProps }) => {
+const SambangSlider = ({ city, photos, children, className, ...restProps }) => {
   const settings = {
-    lazyLoad: true,
     swipeToSlide: true,
     infinite: true,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2500,
-    autoplaySpeed: 2000,
+    adaptiveHeight: true,
+    speed: 1000,
+    autoplaySpeed: 4000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   }
@@ -44,36 +44,13 @@ const SambangSlider = ({ children, className, ...restProps }) => {
   return (
     <div className={cx(styles.root)} {...restProps}>
       <Slider className={styles.wrapper} {...settings}>
-        <div className={styles.container}>
-          <h2>This is a good Item 1</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 2</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 3</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 4</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 5</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 6</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 7</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 8</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 9</h2>
-        </div>
-        <div className={styles.container}>
-          <h2>This is a good Item 10</h2>
-        </div>
+        {photos &&
+          photos.length > 0 &&
+          photos.map((Photo, i) => (
+            <div key={`sambang-${city}-${i}`} className={styles.container}>
+              <Photo className={styles.photo} />
+            </div>
+          ))}
       </Slider>
     </div>
   )

@@ -13,7 +13,13 @@ const SambangList = ({ lang, panels, children, className, ...restProps }) => {
   return (
     <Container narrow className={cx(styles.root)} {...restProps}>
       {panels.map((panel, index) => (
-        <Sambang lang={lang} key={`sambang-${index}`} panel={panel} />
+        <Sambang
+          city={index === 0 ? 'surabaya' : index === 1 ? 'solo' : 'makassar'}
+          lang={lang}
+          index={index}
+          key={`sambang-${index}`}
+          panel={panel}
+        />
       ))}
     </Container>
   )

@@ -5,7 +5,19 @@ import Chevron from './chevronUp'
 import Text from '../Text/Text'
 import SambangSlider from '../SambangSlider/SambangSlider'
 
-const Sambang = ({ lang, panel, children, className, ...restProps }) => {
+import { surabayaPhotos } from './../images/surabaya/surabaya'
+import { soloPhotos } from './../images/solo/solo'
+import { makasarPhotos } from './../images/makasar/makasar'
+
+const Sambang = ({
+  index,
+  city,
+  lang,
+  panel,
+  children,
+  className,
+  ...restProps
+}) => {
   const [show, setShow] = useState(false)
 
   return (
@@ -68,7 +80,16 @@ const Sambang = ({ lang, panel, children, className, ...restProps }) => {
           </header>
           {show && (
             <section className={styles.sliderWrapper}>
-              <SambangSlider />
+              <SambangSlider
+                city={city}
+                photos={
+                  index === 0
+                    ? surabayaPhotos
+                    : index === 1
+                    ? soloPhotos
+                    : makasarPhotos
+                }
+              />
             </section>
           )}
           {show && (
@@ -120,7 +141,16 @@ const Sambang = ({ lang, panel, children, className, ...restProps }) => {
       )}
       {show && (
         <section className={styles.sliderWrapperMobile}>
-          <SambangSlider />
+          <SambangSlider
+            city={city}
+            photos={
+              index === 0
+                ? surabayaPhotos
+                : index === 1
+                ? soloPhotos
+                : makasarPhotos
+            }
+          />
         </section>
       )}
       {show && (
