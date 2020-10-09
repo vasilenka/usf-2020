@@ -21,7 +21,7 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
           title="Urban Social Forum"
         />
       </Container>
-      <Container as="section" bleed>
+      <div>
         <div className={classnames(styles.card)}>
           <Hero
             className={classnames(styles.cover)}
@@ -38,9 +38,6 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
               democratic space for people to put forward alternative ideas and
               imagine ‘Another City is Possible!’
             </Text>
-            {/* <Text className={classnames(styles.description)} normal as="p">
-              We invite you to be a part of the movement.
-            </Text> */}
             <Link
               to="/online#header"
               style={{
@@ -49,7 +46,7 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
                 display: 'block',
               }}>
               <Button primary large className={styles.cta}>
-                <span>
+                <span className={styles.buttonText}>
                   7<sup>th</sup> Urban Social Forum Online
                 </span>
               </Button>
@@ -62,14 +59,14 @@ const Header = ({ className, setDisplay, setViewed, ...restProps }) => {
                 display: 'block',
               }}>
               <Button default large className={styles.cta}>
-                <span>
+                <span className={styles.buttonText}>
                   7<sup>th</sup> Urban Social Forum “Sambang Kota”
                 </span>
               </Button>
             </Link>
           </div>
         </div>
-      </Container>
+      </div>
     </Container>
   )
 }

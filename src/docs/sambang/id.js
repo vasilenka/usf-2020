@@ -26,7 +26,8 @@ export const cities = [
     ],
     date: '23 November 2019',
     participants: '105',
-    download: 'http://kotakita.org',
+    download:
+      'https://drive.google.com/uc?id=1njNzhr8ffSJrXnsOa-anzznoDf0h5O8m&export=download',
     body:
       'November 2019 lalu, membuka Sambang Kota pertama, Surabaya menjadi tuan rumah bagi tiga panel diskusi dengan berbagai topik mengenai isu perkotaan. Ketiga topik berangkat dari isu-isu yang relevan di Surabaya, seperti akses terhadap mobilitas yang inklusif, partisipasi warga dan hak atas kota, serta inovasi berbasis komunitas untuk mendorong ketangguhan kota. Menggunakan metode diskusi “unconference” forum ini berusaha mengajak partisipan secara aktif berkontribusi selama jalannya acara. Antusiasme terhadap ruang ini ditunjukkan oleh lebih dari seratus peserta dan pembicara yang berpartisipasi, tidak hanya akademisi dan mahasiswa, tetapi juga praktisi, komunitas, organisasi masyarakat sipil, serta jaringan internasional seperti UCLG-CISDP. USF Sambang Kota Surabaya didukung oleh Kota Kita, komunitas bersepeda Subcyclist dan Program Studi Perencanaan Kota UNIPA sebagai penyelenggara bersama.',
   },
@@ -48,7 +49,8 @@ export const cities = [
     ],
     date: '21 Desember 2019',
     participants: '138',
-    download: 'http://kotakita.org',
+    download:
+      'https://drive.google.com/uc?id=1vrotYeNxib_7KiKHsiWrlzxLlwPJ_42j&export=download',
     body:
       'Di Solo, USF menyelenggarakan forum Sambang Kota dengan topik yang lebih tematik, sekaligus mengangkat isu-isu perkotaan yang penting di kota. Tidak hanya panel diskusi, forum yang berlangsung sehari penuh di Rumah Banjarsari juga mengajak partisipan berinteraksi dengan isu pangan perkotaan melalui lokakarya dan tur jalan kaki di sekitar Pasar Legi. Selain topik pangan yang menjadi fokus utama untuk melihat isu lainnya seperti sistem politik, ekonomi dan budaya, forum ini juga mendiskusikan isu advokasi penyandang disabilitas dan permasalahan ekologi di kampung kota dengan melibatkan 13 pembicara dari berbagai latar belakang termasuk organisasi penyandang disabilitas, pemerintah, mahasiswa internasional, juga seniman.',
   },
@@ -70,7 +72,8 @@ export const cities = [
     ],
     date: '7 Februari 2020',
     participants: '105',
-    download: 'http://kotakita.org',
+    download:
+      'https://drive.google.com/uc?id=1njNzhr8ffSJrXnsOa-anzznoDf0h5O8m&export=download',
     body:
       'Forum Sambang Kota Makassar mengangkat berbagai permasalahan kota dengan mengundang sudut pandang yang lebih kritis, diinisiasi bersama pemuda dan pelajar serta didukung komunitas literasi, akademisi, serta aktivis dan seniman kota Makassar. Mengangkat isu seperti ruang publik, politik kewargaan, hingga merumuskan bersama peluang gerakan masyarakat sipil di Makassar, forum ini diikuti oleh partisipan dari berbagai organisasi dan inisiatif dengan antusias dan menjadi ruang berjejaring yang memantik kolaborasi-kolaborasi berikutnya. Acara ini ditutup dengan panggung yang menampilkan berbagai karya yang mengekspresikan aspirasi mengenai kota.',
   },

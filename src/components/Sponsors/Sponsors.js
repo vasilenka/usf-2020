@@ -24,7 +24,21 @@ const Sponsors = ({ online, landing, sambang, inView, className }) => {
   return (
     <Container id="Partners" className={styles.root}>
       <Container narrow className={styles.card}>
-        <SectionHeader bleed center title="Organizer &amp; Partners" />
+        <SectionHeader
+          bleed
+          center
+          style={{ textAlign: 'center' }}
+          title={
+            landing ? (
+              <span>
+                The 7<sup>th</sup> Urban Social Forum <br /> Organizer &amp;
+                Partners'
+              </span>
+            ) : (
+              'Organizer & Partners'
+            )
+          }
+        />
         {inView && <FirstRow />}
         {(landing || sambang) && (
           <>

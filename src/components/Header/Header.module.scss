@@ -45,7 +45,7 @@
     margin-bottom: 0;
   }
   @include screen(tabletLandscape) {
-    width: 50vw;
+    width: 35vw;
     margin-bottom: 0;
   }
   @include screen(desktop) {
@@ -60,27 +60,39 @@
 
 .text {
   @include screen(smallPhone) {
-    padding: $space-ll 0;
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+    padding-left: 0;
     flex: 1;
   }
   @include screen(phone) {
-    padding: $space-ll 0;
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+    padding-left: 0;
     flex: 1;
   }
   @include screen(tablet) {
-    padding: $space-ml 0;
+    padding-top: $space-ml;
+    padding-bottom: $space-ml;
+    padding-left: 0;
     flex: 1;
   }
   @include screen(tabletLandscape) {
-    padding: $space-ll;
+    padding-top: $space-ll;
+    padding-bottom: $space-ll;
+    padding-left: ml;
     flex: 1.5;
   }
   @include screen(desktop) {
-    padding: $space-ll;
+    padding-top: $space-ll;
+    padding-bottom: $space-ml;
+    padding-left: ml;
     flex: 1.5;
   }
   @include screen(desktopWide) {
-    padding: $space-ll;
+    padding-top: $space-ll;
+    padding-bottom: $space-ml;
+    padding-left: ml;
     flex: 1.5;
   }
 }
@@ -120,7 +132,7 @@
 }
 
 .cta {
-  justify-content: center;
+  justify-content: flex-start;
   @include screen(smallPhone) {
     width: 100%;
   }
@@ -139,4 +151,9 @@
   @include screen(desktopWide) {
     width: fit-content;
   }
+}
+
+.buttonText {
+  display: inline-block;
+  width: 100%;
 }

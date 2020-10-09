@@ -93,9 +93,37 @@ const Sambang = ({
             </section>
           )}
           {show && (
-            <Text medium as="p" className={styles.paragraph}>
-              {panel.body}
-            </Text>
+            <>
+              <Text medium as="p" className={styles.paragraph}>
+                {panel.body}
+              </Text>
+              <Text medium as="p" className={styles.paragraph}>
+                {lang === 'en' ? (
+                  <>
+                    Download the event report
+                    <a
+                      href={panel.download}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className={styles.link}>
+                      here
+                    </a>
+                    (in Indonesian Language)
+                  </>
+                ) : (
+                  <>
+                    Unduh laporan acara
+                    <a
+                      href={panel.download}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className={styles.link}>
+                      di sini
+                    </a>
+                  </>
+                )}
+              </Text>
+            </>
           )}
         </div>
       </div>
@@ -154,9 +182,37 @@ const Sambang = ({
         </section>
       )}
       {show && (
-        <Text medium as="p" className={styles.paragraphMobile}>
-          {panel.body}
-        </Text>
+        <>
+          <Text medium as="p" className={styles.paragraphMobile}>
+            {panel.body}
+          </Text>
+          <Text medium as="p" className={styles.paragraphMobile}>
+            {lang === 'en' ? (
+              <>
+                Download the event report
+                <a
+                  href={panel.download}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className={styles.link}>
+                  here
+                </a>
+                (in Indonesian Language)
+              </>
+            ) : (
+              <>
+                Unduh laporan acara
+                <a
+                  href={panel.download}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className={styles.link}>
+                  di sini
+                </a>
+              </>
+            )}
+          </Text>
+        </>
       )}
     </article>
   )

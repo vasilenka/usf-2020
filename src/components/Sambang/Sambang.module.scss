@@ -185,6 +185,7 @@
 .paragraph,
 .paragraphMobile {
   padding-top: $space-ml;
+  padding-bottom: $space-sm;
   width: 100%;
   max-width: 80ch;
 }
@@ -234,4 +235,11 @@
   @include screen(desktopWide) {
     display: none;
   }
+}
+
+.link {
+  color: $brand-tertiary-200;
+  font-weight: $semibold;
+  padding-left: $space-xs;
+  padding-right: $space-xs;
 }

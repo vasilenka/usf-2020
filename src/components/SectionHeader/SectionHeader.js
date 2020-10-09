@@ -27,7 +27,11 @@ const SectionHeader = ({
       })}>
       {icon && <div className={styles.iconContainer}>{icon}</div>}
       <div className={styles.titleContainer}>
-        <Text className={classnames(styles.title)} heading2 as="h2">
+        <Text
+          className={classnames(styles.title)}
+          heading2
+          as="h2"
+          {...restProps}>
           {title}
         </Text>
         {subtitle && (
