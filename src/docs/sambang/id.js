@@ -27,7 +27,7 @@ export const cities = [
     date: '23 November 2019',
     participants: '105',
     download:
-      'https://drive.google.com/uc?id=1njNzhr8ffSJrXnsOa-anzznoDf0h5O8m&export=download',
+      'https://drive.google.com/uc?id=1xPjlpc13kM007DbOAZCwwmnOTVXARYUh&export=download',
     body:
       'November 2019 lalu, membuka Sambang Kota pertama, Surabaya menjadi tuan rumah bagi tiga panel diskusi dengan berbagai topik mengenai isu perkotaan. Ketiga topik berangkat dari isu-isu yang relevan di Surabaya, seperti akses terhadap mobilitas yang inklusif, partisipasi warga dan hak atas kota, serta inovasi berbasis komunitas untuk mendorong ketangguhan kota. Menggunakan metode diskusi “unconference” forum ini berusaha mengajak partisipan secara aktif berkontribusi selama jalannya acara. Antusiasme terhadap ruang ini ditunjukkan oleh lebih dari seratus peserta dan pembicara yang berpartisipasi, tidak hanya akademisi dan mahasiswa, tetapi juga praktisi, komunitas, organisasi masyarakat sipil, serta jaringan internasional seperti UCLG-CISDP. USF Sambang Kota Surabaya didukung oleh Kota Kita, komunitas bersepeda Subcyclist dan Program Studi Perencanaan Kota UNIPA sebagai penyelenggara bersama.',
   },

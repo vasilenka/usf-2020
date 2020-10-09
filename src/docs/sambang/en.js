@@ -27,7 +27,7 @@ export const cities = [
     date: '23 November 2019',
     participants: '105',
     download:
-      'https://drive.google.com/uc?id=1njNzhr8ffSJrXnsOa-anzznoDf0h5O8m&export=download',
+      'https://drive.google.com/uc?id=1xPjlpc13kM007DbOAZCwwmnOTVXARYUh&export=download',
     body:
       'We organized three discussion panels for a half-day forum in Surabaya, East Java in November 2019, covering topics relevant to the city ranging from citizen participation and right to the city, accessibility to inclusive mobility, to community-based innovation to improve urban resilience. The forum was attended by 105 participants, and joined by a number of academics, experts, community organizers, as well as international organizations such as UCLG-CISDP as speakers. Along with city co-organizers, a group advocating cycling in the city Subcyclist, Universitas PGRI Adi Buana, and Kota Kita, the forum developed and used a participant-driven method to encourage citizen involvement in the discussions.',
   },
