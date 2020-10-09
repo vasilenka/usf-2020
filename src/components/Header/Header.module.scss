@@ -132,28 +132,34 @@
 }
 
 .cta {
-  justify-content: flex-start;
   @include screen(smallPhone) {
     width: 100%;
+    justify-content: center;
   }
   @include screen(phone) {
     width: 100%;
+    justify-content: center;
   }
   @include screen(tablet) {
     width: fit-content;
+    justify-content: flex-start;
   }
   @include screen(tabletLandscape) {
     width: fit-content;
+    justify-content: flex-start;
   }
   @include screen(desktop) {
     width: fit-content;
+    justify-content: flex-start;
   }
   @include screen(desktopWide) {
     width: fit-content;
+    justify-content: flex-start;
   }
 }
 
 .buttonText {
+  width: fit-content;
+  text-align: center;
   display: inline-block;
-  width: 100%;
 }
