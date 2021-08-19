@@ -41,7 +41,7 @@ const Contact = ({ className }) => {
           <div className={styles.socmedWrapper}>
             <a
               className={styles.socmed}
-              href="https://twitter.com/Urban_Forum"
+              href="https://twitter.com/UrbanSocForum"
               target="_blank"
               rel="noreferrer noopener">
               <Icon icon={<Twitter className={styles.icon} />} />

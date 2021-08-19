@@ -29,30 +29,22 @@ const HomePage = ({ className, ...restProps }) => {
   return (
     <Default>
       <Navbar />
-      {/* {!viewed && display && (
-        <Popup
-          setDisplay={setDisplay}
-          viewed={viewed}
-          display={display}
-          setViewed={setViewed}
-        />
-      )} */}
-      <Header setViewed={setViewed} setDisplay={setDisplay} />
-      <span ref={ref}></span>
-      <About />
-      {/* <Join /> */}
-      {/* <Location inView={inView} /> */}
-      <Archive inView={inView} />
-      <div
-        style={{
-          backgroundImage: inView && 'url("/images/poster.png")',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
-          paddingBottom: 0,
-        }}>
-        <Sponsors landing inView={inView} />
-        <Contact />
+      <div style={{ overflow: 'hidden' }}>
+        <Header setViewed={setViewed} setDisplay={setDisplay} />
+        <span ref={ref}></span>
+        <About />
+        <Archive inView={inView} />
+        <div
+          style={{
+            backgroundImage: inView && 'url("/images/poster.png")',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center',
+            paddingBottom: 0,
+          }}>
+          <Sponsors landing inView={inView} />
+          <Contact />
+        </div>
       </div>
     </Default>
   )

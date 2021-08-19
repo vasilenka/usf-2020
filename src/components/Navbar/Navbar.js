@@ -76,25 +76,21 @@ const Navbar = ({ page }) => {
     setOverlay(true)
   }
 
-  useEffect(() => {
-    let prevScrollpos = window.pageYOffset
-    window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById('navbar').style.top = '0'
-      } else {
-        document.getElementById('navbar').style.top = '-96px'
-      }
-      prevScrollpos = currentScrollPos
-    }
-  }, [])
+  // useEffect(() => {
+  //   let prevScrollpos = window.pageYOffset
+  //   window.onscroll = function() {
+  //     let currentScrollPos = window.pageYOffset
+  //     if (prevScrollpos > currentScrollPos) {
+  //       document.getElementById('navbar').style.top = '0'
+  //     } else {
+  //       document.getElementById('navbar').style.top = '-96px'
+  //     }
+  //     prevScrollpos = currentScrollPos
+  //   }
+  // }, [])
 
   return (
-    <Container
-      id="navbar"
-      bleed
-      as="header"
-      className={classnames(styles.root)}>
+    <Container id="navbar" bleed className={classnames(styles.root)}>
       <Container as="nav" className={classnames(styles.container)}>
         <NavbarMenu to="/#Header">
           <div className={styles.logoDesktop}>

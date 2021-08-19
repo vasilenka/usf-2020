@@ -2,25 +2,6 @@
 @import 'src/base';
 
 .root {
-  min-height: 100vh;
+  position: relative;
   background: $light-alpha-100;
-  overflow: hidden;
-  @include screen(smallPhone) {
-    padding-top: 80px;
-  }
-  @include screen(phone) {
-    padding-top: 80px;
-  }
-  @include screen(tablet) {
-    padding-top: 88px;
-  }
-  @include screen(tabletLandscape) {
-    padding-top: 88px;
-  }
-  @include screen(desktop) {
-    padding-top: 88px;
-  }
-  @include screen(desktopWide) {
-    padding-top: 88px;
-  }
 }

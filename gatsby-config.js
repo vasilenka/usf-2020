@@ -1,6 +1,6 @@
 module.exports = {
   // Add this if you want to deploy to github pages or if you deploy to sub-route
-  // pathPrefix: "/reponame",
+  pathPrefix: '/2020',
 
   siteMetadata: {
     lang: `en`,

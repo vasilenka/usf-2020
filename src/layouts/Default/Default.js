@@ -8,15 +8,15 @@ import SEO from './../../utils/seo'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-const Layout = ({ children }) => (
-  <main className={styles.root}>
+const Default = ({ children }) => (
+  <>
     <SEO />
-    {children}
-  </main>
+    <main className={styles.root}>{children}</main>
+  </>
 )
 
-Layout.propTypes = {
+Default.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Default
